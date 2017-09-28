@@ -1,0 +1,44 @@
+<footer id="footer" class="container-fluid">
+  <ul class="col d-flex justify-content-center hide-list-style">
+
+    {% if site.slack %}
+      <li>
+        <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.github_username %}
+      <li>
+          <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+      <li>
+          <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.youtube %}
+      <li>
+          <a href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a>
+      </li>
+    {% endif %}
+
+  </ul>
+  <ul class="hide-list-style text-align-center">
+    <li class="copyright">&copy; {% assign thisyear = site.time | date: "%Y" %}
+    {% if site.first_published %}
+      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+    {% endif %}
+    {{ thisyear }}
+    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+  </ul>
+</footer>

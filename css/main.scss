@@ -1,0 +1,191 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1, .logo-font {
+  font-family: 'Exo', sans-serif !important;
+  font-weight: 600;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  z-index: -1;
+}
+
+body {
+
+  background-image: url(../images/text-test.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+}
+
+#footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+#hero {
+  ul {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+#section1, #section2 {
+  text-align: justify;
+}
+
+#smart-contracts {
+   p {
+     text-align: justify;
+   }
+
+   li {
+     text-align: justify;
+     list-style: none;
+     padding: 0.5rem;
+   }
+ }
+
+/*
+.background {
+  background-image: url("/images/banner.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+*/
+
+.background-white {
+  background-color: white;
+  opacity: 0.9;
+}
+
+.background-light-grey {
+  background-color: #d2d2d2;
+}
+
+.background-dark-grey {
+  background-color: #787878;
+}
+
+// Safari flexbox bug workaround
+.col { border: 1px solid transparent; }
+
+.container-fluid {
+  // max-width: 1200px;
+  justify-content: center;
+}
+
+.copyright {
+  color: white;
+}
+
+.cover-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  text-align: center;
+  .white-bg {
+    background-color: white;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+  }
+}
+
+.fa {
+  font-size: 2rem;
+  color: white;
+}
+
+
+.features {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+
+  li {
+    display: block;
+    flex: 1 20%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 920px) {
+  .features li {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .features li {
+    min-width: 90%;
+  }
+}
+
+.headline {
+  font-size: 8rem;
+}
+
+.hide-list-style {
+  list-style: none;
+}
+
+.logo-image {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
+
+.text-align-center {
+  text-align: center;
+}
+
+
+/*
+* {
+   outline: 1px solid red !important;
+}
+*/

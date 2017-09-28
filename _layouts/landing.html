@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Custom landing page design-->
+<html>
+
+  {% include head.html %}
+
+  <body class="landing">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+
+
+    </div>
+<!--ADDED by geleeroyale: Google Analytics-->
+        {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
+  </body>
+
+</html>
