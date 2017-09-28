@@ -87,6 +87,7 @@ body {
 .background-white {
   background-color: white;
   opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 .background-light-grey {
@@ -113,8 +114,13 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   min-height: 100vh;
-  padding-bottom: 40px;
   text-align: center;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
   .white-bg {
     background-color: white;
     opacity: 0.9;
@@ -162,11 +168,18 @@ body {
   list-style: none;
 }
 
-.logo-image {
+.hero-image-container {
   opacity: 0.9;
   filter: alpha(opacity=90);
-  margin: 0px;
-  padding: 0px;
+}
+
+.navbar {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+
+  .navbar-logo {
+
+  }
 
 }
 
@@ -176,6 +189,18 @@ body {
 
 .padding-bottom {
   padding-bottom: 2rem;
+}
+
+.hero-image {
+  margin-top: 100px;
+  padding: 30px;
+  max-height: 60vh;
+}
+
+@media (max-width: 650px) {
+  .hero-image {
+  max-height: 33vh;
+  }
 }
 
 
