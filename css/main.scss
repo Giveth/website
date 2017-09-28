@@ -23,13 +23,12 @@ h2, h3, h4, h5, h6 {
 
 main {
   background-color: white;
-  opacity: 0.6;
+  opacity: 0.7;
   filter: alpha(opacity=60);
   z-index: -1;
 }
 
 body {
-
   background-image: url(../images/text-test.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,17 +114,11 @@ body {
   padding-right: 0px;
   min-height: 100vh;
   text-align: center;
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-attachment: fixed;
   background-position: center;
-
-  .white-bg {
-    background-color: white;
-    opacity: 0.9;
-    filter: alpha(opacity=90);
-  }
 }
 
 .fa {
@@ -168,31 +161,8 @@ body {
   list-style: none;
 }
 
-.hero-image-container {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-.navbar {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-
-  .navbar-logo {
-
-  }
-
-}
-
-.padding-top {
-  padding-top: 2rem;
-}
-
-.padding-bottom {
-  padding-bottom: 2rem;
-}
-
 .hero-image {
-  margin-top: 100px;
+  margin-top: 10vh;
   padding: 30px;
   max-height: 60vh;
 }
@@ -203,9 +173,34 @@ body {
   }
 }
 
+.hero-image-container {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.navbar {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
 
 .text-align-center {
   text-align: center;
+}
+
+.color-white {
+  color: white;
+}
+
+.tagline {
+  font-size: 3rem;
 }
 
 
