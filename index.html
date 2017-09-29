@@ -27,7 +27,7 @@ The way I do it:
       <img class="hero-image img-fluid" src="/assets/Giveth-full-logo-white.svg" alt="">
     </div>
   </div>
-  <div class="row d-flex">
+  <div class="flex-row d-flex">
     <div class="col padding-bottom color-white">
       <!--  <h1 class="p-2 headline">Giveth</h1> -->
       <h2 class="padding-top tagline">Altruistic Communities,</h2>
@@ -72,9 +72,9 @@ The way I do it:
   </div>
 </section>
 
-<section id="section1" class="container-fluid padding-top">
-  <div class="row d-flex hero-image-container justify-content-around">
-    <div class="col justify-content-center text-block">
+<section id="core-values" class="container-fluid padding-top">
+  <div class="row d-flex hero-image-container justify-content-around flex-wrap">
+    <div class="flex-column justify-content-center text-block">
       <h2>Open-source Giving!</h2>
       <p>
         Giveth is a completely free and open source platform, that will enable
@@ -90,17 +90,16 @@ The way I do it:
         what it **accomplished** and most important: Know the **details** of the whole process!
       </p>
     </div>
-    <div class="col justify-content-center text-block">
+    <div class="flex-column justify-content-center text-block">
       <h2>Create Altruistic Communities</h2>
-      <p><quote>
-          "Anyone can create a cause on anything they feel strongly about supporting.
+      <p>"Anyone can create a cause on anything they feel strongly about supporting.
           Whether it is solar energy to impoverished    area, or organizing a recycling campaign, they can use the Giveth platform
           to find other people that share their excitement.  Giveth encourage organized efforts
           and shared resources to tackle global and local problems together. The main goal is to cultivate connections
           that build strong communities upon a solid foundation of transparency and accountabilitypowered by blockchain tech."
-      </quote></p>
+      </p>
     </div>
-    <div class="col justify-content-center text-block">
+    <div class="flex-column justify-content-center text-block">
       <h2>Connecting and Rewarding</h2>
       <p>"Every donation is an opportunity
           to build a connection between like minded individuals, all those who are making it happen.
@@ -123,17 +122,15 @@ The way I do it:
     </div>
   </div>
 </section>
-<section id="transaction-flow" class="container-fluid">
-  <div class="row justify-content-center">
+
+<section id="transaction-flow" class="container-fluid background-light-grey padding-top padding-bottom">
+  <div class="flex-row justify-content-center">
       <h2>Transparent Donation Flow</h2>
   </div>
-  <div class="row justify-content-center">
-      <img src="assets/diagrams/powered_by_ethereum.svg" alt="">
-  </div>
-  <div class="row d-flex padding-top">
+  <div class="flex-row d-flex padding-top">
     <div class="col">
-      <img src="assets/diagrams/maker.svg" class="img-fluid padding-bottom" alt="">
-      <img src="assets/diagrams/reviewer.svg" class="img-fluid padding-top" alt="">
+      <img src="assets/diagrams/maker.svg" class="img-fluid padding-bottom align-top" alt="">
+      <img src="assets/diagrams/reviewer.svg" class="img-fluid padding-top align-bottom" alt="">
     </div>
     <div class="col">
       <img src="assets/diagrams/transaction-flow.svg" class="img-fluid" alt="">
@@ -145,33 +142,53 @@ The way I do it:
   </div>
 </section>
 
-<div id="section3" class="container-fluid">
+<section id="user-roles" class="container-fluid padding-top padding-bottom">
+  <div class="flex-row justify-content-center">
+      <h2>Change depends on Givers and Makers</h2>
+  </div>
+  <div class="flex-row d-flex padding-top">
+    <div class="col">
+      <img src="images/roles.svg" class="img-fluid" alt="a comparison between user roles">
+    </div>
+  </div>
+</section>
 
-</div>
-
-<section id="smart-contracts" class="container-fluid padding-top">
+<section id="smart-contracts" class="container-fluid background-light-grey padding-top">
   <div class="col">
     <div class ="row justify-content-center">
       <h2>Decentralized Innovation</h2>
     </div>
-    <div class ="row">
-      <div class="col d-flex justify-content-center">
-        <p class="text-block-large">We strongly believe in open source culture! All of our software is considered a gift to the Ethereum community.
-        <br><br>
-        Developers can use our base system as a launching pad to test their for-profit ideas. Imagine starting a decentralized charity to build an orphanage while testing an experimental governance system for allocating donations.
-        <br><br>
-        Live smart contract testing while making the world a better place.
-        </p>
+    <div class ="flex-row d-flex justify-content-around align-middle padding-bottom flex-wrap">
+        <div class="flex-column d-flex">
+          <img src="images/github.png" class="img-fluid mobile-image-size padding-top" alt="Github is social coding">
+            <div class="flex-row d-flex align-middle padding-top">
+              <h6>Contribute to development on
+                <a href="http://github.com/Giveth/" class="btn btn-success">Github</a>
+              </h6>
+            </div>
+        </div>
+        <div class="text-block-large padding-top align-middle">
+          <h5 class="padding-top align-middle">We strongly believe in open source culture!
+            <br><br>
+            All of our software is considered a gift to the Ethereum community.
+          </h5>
+          <div class="align-middle">
+            <br><br>
+            Developers can use our base system as a launching pad to test their for-profit ideas. Imagine starting a decentralized charity to build an orphanage while testing an experimental governance system for allocating donations.
+            <br><br>
+            Live smart contract testing while making the world a better place.
+          </div>
+        </div>
       </div>
-    </div>
     <div class="row d-flex justify-content-center">
-      <h6>Contribute to development on
-        <a href="http://github.com/Giveth/" class="btn btn-success">Github</a>
-      </h6>
+
     </div>
   </div>
+  <div class="flex-row d-flex padding-top justify-content-center">
+    <h2>Our Projects</h2>
+  </div>
       <div class="col d-flex padding-top justify-content-around">
-            <ul class="row d-flex features mr-auto justify-content-center">
+            <ul class="row d-flex features">
               <li>
                 <h4>Minime</h4>
                 <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
@@ -207,5 +224,28 @@ The way I do it:
             </ul>
       </div>
 </section>
+
+<section id="unicorn-dac" class="container-fluid padding-top padding-bottom">
+  <div class="flex-column d-flex justify-content-center full-width">
+      <h2 class="padding-top align-middle logo-font">Giveth Unicorn DAC</h2>
+      <div class="text-block align-middle align-self-center">
+        Giveth is a Dapp (platform), developed by the Unicorn DAC, both considered community led projects - not an organization, not a charity, not a corporation.
+        <br><br>
+        The Unicorn DAC’s main goal is to develop the Giveth platform, it defines the team’s drives as supporting transparency, open-source development and collaborating with similar projects.
+        <br><br>
+        We consider similar initiatives co-creators, other DACs and not competitors,  as with similar goals, we all strive to make the world a better place.
+      </div>
+  </div>
+</section>
+
+
+  <section id="friends" class="container-fluid padding-top padding-bottom background-black">
+    <div class="flex-row d-flex justify-content-center">
+        <h4 class="color-white">Unicorn Love</h4>
+    </div>
+    <div class="flex-column d-flex">
+        <img src="/images/friends.svg" class="img-fluid friends" alt="">
+    </div>
+  </section>
 
 </main>

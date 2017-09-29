@@ -32,13 +32,5 @@
     {% endif %}
 
   </ul>
-  <ul class="hide-list-style text-align-center">
-    <li class="copyright">&copy; {% assign thisyear = site.time | date: "%Y" %}
-    {% if site.first_published %}
-      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
-      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
-    {% endif %}
-    {{ thisyear }}
-    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
-  </ul>
+  <h6 class="color-white padding-top">MMXVII - No Rights Reserved - The Unicorn DAC</h6>
 </footer>
