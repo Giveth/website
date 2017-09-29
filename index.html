@@ -146,33 +146,30 @@ The way I do it:
   <div class="flex-row justify-content-center">
       <h2>Change depends on Givers and Makers</h2>
   </div>
-  <div class="flex-row d-flex padding-top">
+  <div class="flex-row d-flex">
     <div class="col">
       <img src="images/roles.svg" class="img-fluid" alt="a comparison between user roles">
     </div>
   </div>
 </section>
 
-<section id="smart-contracts" class="container-fluid background-light-grey padding-top">
+<section id="smart-contracts" class="container-fluid background-light-grey padding-top padding-bottom">
   <div class="col">
-    <div class ="row justify-content-center">
-      <h2>Decentralized Innovation</h2>
-    </div>
     <div class ="flex-row d-flex justify-content-around align-middle padding-bottom flex-wrap">
-        <div class="flex-column d-flex">
-          <img src="images/github.png" class="img-fluid mobile-image-size padding-top" alt="Github is social coding">
-            <div class="flex-row d-flex align-middle padding-top">
-              <h6>Contribute to development on
-                <a href="http://github.com/Giveth/" class="btn btn-success">Github</a>
-              </h6>
-            </div>
-        </div>
-        <div class="text-block-large padding-top align-middle">
-          <h5 class="padding-top align-middle">We strongly believe in open source culture!
+        <div class="padding-top align-middle">
+          <h2 class="padding-top align-middle">We strongly believe in open source culture!
             <br><br>
             All of our software is considered a gift to the Ethereum community.
-          </h5>
-          <div class="align-middle">
+          </h2>
+          <div class="flex-column d-flex justify-content-center">
+            <img src="images/github.svg" class="img-fluid padding-top align-self-center" style="max-width: 20vw" alt="Github is social coding">
+              <div class="flex-row d-flex padding-top justify-content-center">
+                <h6>
+                  <a href="http://github.com/Giveth/" class="btn btn-success">Contribute to development</a>
+                </h6>
+              </div>
+          </div>
+          <div class="text-block-large">
             <br><br>
             Developers can use our base system as a launching pad to test their for-profit ideas. Imagine starting a decentralized charity to build an orphanage while testing an experimental governance system for allocating donations.
             <br><br>
@@ -188,52 +185,70 @@ The way I do it:
     <h2>Our Projects</h2>
   </div>
       <div class="col d-flex padding-top justify-content-around">
-            <ul class="row d-flex features">
+            <ul class="row d-flex features projects">
               <li>
-                <h4>Minime</h4>
-                <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
-                  midstream to include new features in a decentralized fashion, without
-                  having to migrate to a new token contract and without having to ask for
-                  permission.
+                <h4>Giveth Donation Application</h4>
+                <p>The first working prototype of the full Giveth platform. Scheduled to be ready for onboarding Users soon!
                 </p>
               </li>
               <li>
-                <h4>Vault</h4>
-                <p>The Vault Contract is designed to hold ether and safely automate payments
-                   in a Dapp/DAO environment. It allows for a step-by-step decentralization
-                   process as trust in the code base is built over time.
-                </p>
-              </li>
-              <li>
-                <h4>Delegated Governance</h4>
-                <p>One of Giveth core contracts we are working on enables a donor to
-                  delegate authority over their donations in a simple gas efficient way,
-                  following the principles of liquid democracy.
-                </p>
-              </li>
-              <li>
-                <h4>Milestone Payouts</h4>
-                <p>Our milestone contracts once fully tested and they are able to keep
-                  organizations and causes accountable to their supporters. Breaking down
-                  lump sum amounts and ensuring milestones completion is an approach that
-                  would help all types of organizations (for profit or non-profits) as well
-                  as the current ICO ecosystem by reassuring that contributed funds are
-                  well spent.
+                <h4>Giveth Milestontracker</h4>
+                <p>The bread and butter of Giveth's platform, the milestonetracker is actively being used to track the development of the platform itself.
                 </p>
               </li>
             </ul>
       </div>
+
+      <div class="flex-row d-flex padding-top justify-content-center">
+        <h2>Our Smart Contracts</h2>
+      </div>
+          <div class="col d-flex padding-top justify-content-around">
+                <ul class="row d-flex features">
+                  <li>
+                    <h4>Minime</h4>
+                    <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
+                      midstream to include new features in a decentralized fashion, without
+                      having to migrate to a new token contract and without having to ask for
+                      permission.
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Vault</h4>
+                    <p>The Vault Contract is designed to hold ether and safely automate payments
+                       in a Dapp/DAO environment. It allows for a step-by-step decentralization
+                       process as trust in the code base is built over time.
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Liquid Pledging</h4>
+                    <p>One of Giveth core contracts we are working on enables a donor to
+                      delegate authority over their donations in a simple gas efficient way,
+                      following the principles of liquid democracy.
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Milestone Payouts</h4>
+                    <p>Our milestone contracts are able to keep
+                      organizations and causes accountable to their supporters. Breaking down
+                      lump sum amounts and ensuring milestones completion is an approach that
+                      would help all types of organizations (for profit or non-profits) as well
+                      as the current ICO ecosystem by reassuring that contributed funds are
+                      well spent.
+                    </p>
+                  </li>
+                </ul>
+          </div>
 </section>
 
 <section id="unicorn-dac" class="container-fluid padding-top padding-bottom">
   <div class="flex-column d-flex justify-content-center full-width">
-      <h2 class="padding-top align-middle logo-font">Giveth Unicorn DAC</h2>
-      <div class="text-block align-middle align-self-center">
-        Giveth is a Dapp (platform), developed by the Unicorn DAC, both considered community led projects - not an organization, not a charity, not a corporation.
+      <h2 class="padding-top align-middle logo-font">Giveth and the Unicorn DAC</h2>
+      <div class="text-block align-middle align-self-center text-bold padding-top">
+        Giveth is a Dapp (Donation application), developed by the Unicorn DAC (Decentralized Altruistic community) and is therefore considered to be a community led project - not an organization, not a charity, not a corporation.
         <br><br>
-        The Unicorn DAC’s main goal is to develop the Giveth platform, it defines the team’s drives as supporting transparency, open-source development and collaborating with similar projects.
+        The Unicorn DAC’s main goal is to develop the Giveth platform, it defines the team’s drive as supporting transparency, open-source development and collaborating with similar projects.
         <br><br>
-        We consider similar initiatives co-creators, other DACs and not competitors,  as with similar goals, we all strive to make the world a better place.
+        We consider similar initiatives co-creators and other DACs not as competitors. We share certain goals and we strive to make the world a better place with modern technology and community building.
       </div>
   </div>
 </section>

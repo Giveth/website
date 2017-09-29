@@ -72,6 +72,8 @@ body {
 }
 
 #smart-contracts {
+  max-width: 90vw;
+
    p {
      text-align: justify;
    }
@@ -81,6 +83,10 @@ body {
      color: white;
      list-style: none;
      background-color: black;
+
+      .projects {
+        background-color: #787878;
+      }
    }
  }
 
@@ -241,7 +247,7 @@ body {
 }
 
 .text-block-large {
-  text-align: center;
+  text-align: justify;
   max-width: 60vw;
 }
 
@@ -254,6 +260,11 @@ body {
   .text-block-large {
     max-width: 100vw;
   }
+}
+
+.text-bold {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
 }
 
 .tagline {
