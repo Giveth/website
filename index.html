@@ -21,56 +21,58 @@ The way I do it:
 
 <main class="container-fluid">
 
-<section id="hero" class="container-fluid justify-content-center cover-section">
-  <div class="row d-flex hero-image-container">
-    <div class="col">
-      <img class="hero-image img-fluid" src="/assets/Giveth-full-logo-white.svg" alt="">
+  <section id="hero" class="container-fluid justify-content-center cover-section">
+    <div class="row d-flex hero-image-container justify-content-center">
+      <div class="flex-column align-middle">
+        <img class="hero-image img-fluid logo" src="/assets/Giveth-logo-white.svg" alt="">
+        <img class="hero-image img-fluid typelogo" src="/assets/Giveth-typelogo-white.svg" alt="">
+      </div>
     </div>
-  </div>
-  <div class="flex-row d-flex">
-    <div class="col padding-bottom color-white">
-      <!--  <h1 class="p-2 headline">Giveth</h1> -->
-      <h2 class="padding-top tagline">Altruistic Communities,</h2>
-      <h3 class="tagline">empowered by Blockchain tech</h3>
-      <!-- Upper social icons
-      <ul class="col d-flex justify-content-center hide-list-style">
+    <div class="flex-row d-flex align-middle">
+      <div class="col padding-bottom color-white">
+        <!--  <h1 class="p-2 headline">Giveth</h1> -->
+        <h2 class="padding-top tagline">Altruistic Communities</h2>
+        <img class="img-fluid ethereum" src="/images/powered_by_ethereum.png" alt="">
+        <!-- <h3 class="tagline">empowered by Blockchain tech</h3>
+         Upper social icons
+        <ul class="col d-flex justify-content-center hide-list-style">
 
-            {% if site.slack %}
-              <li>
-                <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>
-              </li>
-            {% endif %}
+              {% if site.slack %}
+                <li>
+                  <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>
+                </li>
+              {% endif %}
 
-            {% if site.twitter_username %}
-              <li>
-                <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
-              </li>
-            {% endif %}
+              {% if site.twitter_username %}
+                <li>
+                  <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+                </li>
+              {% endif %}
 
-            {% if site.github_username %}
-              <li>
-                  <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
-              </li>
-            {% endif %}
+              {% if site.github_username %}
+                <li>
+                    <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+                </li>
+              {% endif %}
 
-            {% if site.facebook_username %}
-              <li>
-                  <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
-              </li>
-            {% endif %}
+              {% if site.facebook_username %}
+                <li>
+                    <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+                </li>
+              {% endif %}
 
-            {% if site.youtube %}
-              <li>
-                  <a href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a>
-              </li>
-            {% endif %}
+              {% if site.youtube %}
+                <li>
+                    <a href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a>
+                </li>
+              {% endif %}
 
-      </ul>
-      -->
-          <h5 class="padding-top">Join the discussion on <a href="http://slack.giveth.io" class="btn btn-primary color-white">Slack</a></h5>
+        </ul>
+        -->
+            <h5 class="padding-top"><a href="http://slack.giveth.io" class="btn btn-warning color-white"><span class="fa fa-slack slack-icon"></span> Join the discussion on Slack</a></h5>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <section id="core-values" class="container-fluid padding-top">
   <div class="row d-flex hero-image-container justify-content-around flex-wrap">
@@ -241,7 +243,7 @@ The way I do it:
 </section>
 
 <section id="unicorn-dac" class="container-fluid padding-top padding-bottom">
-  <div class="flex-column d-flex justify-content-center full-width">
+  <div class="flex-column d-flex justify-content-center">
       <h2 class="padding-top align-middle logo-font">Giveth and the Unicorn DAC</h2>
       <div class="text-block align-middle align-self-center text-bold padding-top">
         Giveth is a Dapp (Donation application), developed by the Unicorn DAC (Decentralized Altruistic community) and is therefore considered to be a community led project - not an organization, not a charity, not a corporation.
@@ -258,8 +260,13 @@ The way I do it:
     <div class="flex-row d-flex justify-content-center">
         <h4 class="color-white">Unicorn Love</h4>
     </div>
-    <div class="flex-column d-flex">
-        <img src="/images/friends.svg" class="img-fluid friends" alt="">
+    <div class="flex-row d-flex flex-wrap justify-content-around friendsrow">
+        <img src="/images/friends/alicesi.png" class="img-fluid friends" alt="">
+        <img src="/images/friends/aragon.svg" class="img-fluid friends" alt="">
+        <img src="/images/friends/district0x.svg" class="img-fluid friends" alt="">
+        <img src="/images/friends/myetherwallet.svg" class="img-fluid friends" alt="">
+        <img src="/images/friends/statusim.png" class="img-fluid friends" alt="">
+        <img src="/images/friends/swarmcity.png" class="img-fluid friends" alt="">
     </div>
   </section>
 

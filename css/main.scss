@@ -53,19 +53,36 @@ body {
   }
 }
 
+.fa {
+  font-size: 2rem;
+  color: white;
+}
+
+
 #hero {
-  max-width: 100%;
 
   ul {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .slack-icon {
+    font-size: 18px;
+  }
+
+  .logo {
+    padding-top: 15vh;
+    min-height: 35vh;
+    min-width: 35vw;
+  }
+
+  .typelogo {
+    min-height: 30vh;
+    min-width: 30vw;
+    max-width: 40vw;
+  }
 }
 
-.fa {
-  font-size: 2rem;
-  color: white;
-}
 
 #transaction-flow {
   text-align: justify;
@@ -169,6 +186,22 @@ body {
   justify-content: center;
 }
 
+.ethereum {
+  max-height: 3rem;
+}
+
+
+@media (max-width: 920px) {
+  .ethereum {
+    max-width: 30vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .ethereum {
+    max-width: 50vw;
+  }
+}
 
 .features {
   display: flex;
@@ -208,14 +241,13 @@ body {
 }
 
 .hero-image {
-  margin-top: 10vh;
-  padding: 30px;
-  max-height: 60vh;
+  max-height: 30vh;
+  padding: 20px;
 }
 
 @media (max-width: 650px) {
   .hero-image {
-  max-height: 33vh;
+  max-height: 20vh;
   }
 }
 
@@ -282,22 +314,21 @@ body {
   filter: alpha(opacity=100);
 }
 
-.full-width {
-  min-width: 100vw;
-  min-height: 100vh;
+.friendsrow {
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 .friends {
-  max-width: 50vw;
-  align-self: center;
+  max-height: 10vw;
+  width: auto;
+  padding: 0.5rem;
 }
 
 @media (max-width: 650px) {
   .friends {
-    max-width: 90vw;
   }
 }
-
 
 /*
 * {
