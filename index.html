@@ -22,140 +22,73 @@ The way I do it:
 <main class="container-fluid">
 
   <section id="hero" class="container-fluid justify-content-center cover-section">
+    <div class="gradient">
     <div class="row d-flex hero-image-container justify-content-center">
-      <div class="flex-column align-middle">
-        <img class="hero-image img-fluid logo" src="/assets/Giveth-logo-white.svg" alt="">
+
+        <div class="flex-column align-middle">
+          <img class="hero-image img-fluid logo" src="/assets/Giveth-logo-white.svg" alt="">
         <img class="hero-image img-fluid typelogo" src="/assets/Giveth-typelogo-white.svg" alt="">
       </div>
     </div>
-    <div class="flex-row d-flex align-middle">
+
+    <div class="flex-row d-flex align-middle padding-top ">
       <div class="col padding-bottom color-white">
         <!--  <h1 class="p-2 headline">Giveth</h1> -->
-        <h2 class="padding-top tagline">Building the Future of Giving</h2>
-        <img class="img-fluid ethereum" src="/images/powered_by_ethereum.png" alt="">
-        <!-- <h3 class="tagline">empowered by Blockchain tech</h3>
-         Upper social icons
-        <ul class="col d-flex justify-content-center hide-list-style">
-
-              {% if site.slack %}
-                <li>
-                  <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>
-                </li>
-              {% endif %}
-
-              {% if site.twitter_username %}
-                <li>
-                  <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
-                </li>
-              {% endif %}
-
-              {% if site.github_username %}
-                <li>
-                    <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
-                </li>
-              {% endif %}
-
-              {% if site.facebook_username %}
-                <li>
-                    <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
-                </li>
-              {% endif %}
-
-              {% if site.youtube %}
-                <li>
-                    <a href="{{ site.youtube }}"><i class="fa fa-youtube"></i></a>
-                </li>
-              {% endif %}
-
-        </ul>
-        -->
-            <h5 class="padding-top"><a href="http://slack.giveth.io" class="btn btn-warning color-white"><span class="fa fa-slack slack-icon"></span> Join the discussion on Slack</a></h5>
+        <h2 class="tagline">Building the Future of Giving</h2>
+        <img class="img-fluid ethereum padding-top" src="/images/powered_by_ethereum.png" alt="">
+        <h5 class="padding-top color-black"><a href="http://slack.giveth.io" class="btn btn-warning"><span class="fa fa-slack slack-icon"></span> Join the discussion on Slack</a></h5>
       </div>
     </div>
+
+  </div>
   </section>
 
-<section id="core-values" class="container-fluid padding-top">
+<section id="core-values" class="container-fluid padding-top background-white justify-content-center background-purple color-white">
   <div class="row d-flex hero-image-container justify-content-around flex-wrap">
-    <div class="flex-column justify-content-center text-block">
-      <h2>Open-source Giving!</h2>
+    <div class="flex-column justify-content-center content-block">
+      <img src="images/opensource.svg" class="img-fluid value-icon" alt="">
+      <h2 class="">Opensource<br>Giving</h2>
       <p>
-        Giveth is a completely free and open source platform, that will enable
-        people to build communities around causes. Our Donation Application (Dapp)
-        empowers Givers and Makers to work together toward achieving a common goal.
-
-        Campaigns raising funds with Giveth can be trusted because of a mix of
-        blockchain based transparency and social accountability.
-
-        Causes that will make the world a better a place will run on the Ethereum
-        blockchain to enable high level security and transparent accounting, so you
-        can donate to your favorite cause, know **exactly** where your donation went,
-        what it **accomplished** and most important: Know the **details** of the whole process!
+        Giveth is a completely free and open source platform, facilitating giving, pledging and collecting donations.
       </p>
     </div>
-    <div class="flex-column justify-content-center text-block">
-      <h2>Create Altruistic Communities</h2>
-      <p>"Anyone can create a cause on anything they feel strongly about supporting.
-          Whether it is solar energy to impoverished    area, or organizing a recycling campaign, they can use the Giveth platform
-          to find other people that share their excitement.  Giveth encourage organized efforts
-          and shared resources to tackle global and local problems together. The main goal is to cultivate connections
-          that build strong communities upon a solid foundation of transparency and accountabilitypowered by blockchain tech."
+    <div class="flex-column justify-content-center content-block">
+      <img src="images/community.svg" class="img-fluid value-icon" alt="">
+      <h2>Altruistic<br>Communities</h2>
+      <p>Anyone can create a cause on something they want to change. One goal of Giveth is to enable the creation of communities around these causes.
       </p>
     </div>
-    <div class="flex-column justify-content-center text-block">
-      <h2>Connecting and Rewarding</h2>
-      <p>"Every donation is an opportunity
-          to build a connection between like minded individuals, all those who are making it happen.
-
-          Giveth uses smart contracts
-          on the E T H E R E U M blockchain
-          to create a transparent donation flow
-          that keeps Givers in control
-          of their contributions
-          until it is locked in
-          to be used for a specific purpose
-          and once paid out
-          the details of what their donation did
-          is permanently recorded on the blockchain.
-
-          These smart contracts also allow 'Givers' to trust
-          that their donations will be spent effectively
-          as 'Makers' are rewarded on a milestone basis."
+    <div class="flex-column justify-content-center content-block">
+      <img src="images/success.svg" class="img-fluid value-icon" alt="">
+      <h2>Connecting<br>and Rewarding</h2>
+      <p>Every donation is an opportunity
+          to build a connection between like minded individuals.
       </p>
     </div>
   </div>
 </section>
 
-<section id="transaction-flow" class="container-fluid background-light-grey padding-top padding-bottom">
+<section id="transaction-flow" class="container-fluid padding-top padding-bottom background-white">
   <div class="flex-row justify-content-center">
       <h2>Transparent Donation Flow</h2>
   </div>
-  <div class="flex-row d-flex padding-top">
-    <div class="col">
-      <img src="assets/diagrams/maker.svg" class="img-fluid padding-bottom align-top" alt="">
-      <img src="assets/diagrams/reviewer.svg" class="img-fluid padding-top align-bottom" alt="">
-    </div>
-    <div class="col">
-      <img src="assets/diagrams/transaction-flow.svg" class="img-fluid" alt="">
-    </div>
-    <div class="col">
-      <img src="assets/diagrams/dac.svg" class="img-fluid padding-bottom" alt="">
-      <img src="assets/diagrams/vault.svg" class="img-fluid padding-top" alt="">
-    </div>
+  <div class="col padding-top">
+      <img src="assets/diagrams/liquid-pledging.svg" class="img-fluid" alt="">
   </div>
 </section>
 
-<section id="user-roles" class="container-fluid padding-top padding-bottom">
+<section id="user-roles" class="container-fluid padding-top padding-bottom background-light-grey">
   <div class="flex-row justify-content-center">
-      <h2>Change depends on Givers and Makers</h2>
+      <h2>Change depends on Givers<br>and the Campaigns they support</h2>
   </div>
   <div class="flex-row d-flex">
     <div class="col">
-      <img src="images/roles.svg" class="img-fluid" alt="a comparison between user roles">
+      <img src="images/roles.svg" class="img-fluid user-roles" alt="a comparison between user roles">
     </div>
   </div>
 </section>
 
-<section id="smart-contracts" class="container-fluid background-light-grey padding-top padding-bottom">
+<section id="smart-contracts" class="container-fluid background-white padding-top padding-bottom">
   <div class="col">
     <div class ="flex-row d-flex justify-content-around align-middle padding-bottom flex-wrap">
         <div class="padding-top align-middle">
@@ -167,7 +100,7 @@ The way I do it:
             <img src="images/github.svg" class="img-fluid padding-top align-self-center" style="max-width: 20vw" alt="Github is social coding">
               <div class="flex-row d-flex padding-top justify-content-center">
                 <h6>
-                  <a href="http://github.com/Giveth/" class="btn btn-success">Contribute to development</a>
+                  <a href="http://github.com/Giveth/" class="btn btn-warning">Contribute to development</a>
                 </h6>
               </div>
           </div>
@@ -189,14 +122,16 @@ The way I do it:
       <div class="col d-flex padding-top justify-content-around">
             <ul class="row d-flex features projects">
               <li>
-                <h4>Giveth Donation Application</h4>
-                <p>The first working prototype of the full Giveth platform. Scheduled to be ready for onboarding Users soon!
-                </p>
+                  <img src="/assets/dapp-logo-alpha.svg" class="project-icon" alt="The Giveth Donation Application">
+                  <h4>Giveth Donation Application</h4>
+                  <p>The first working prototype of the full Giveth platform. Scheduled to be ready for onboarding Users soon!
+                  </p>
               </li>
               <li>
-                <h4>Giveth Milestontracker</h4>
-                <p>The bread and butter of Giveth's platform, the milestonetracker is actively being used to track the development of the platform itself.
-                </p>
+                  <img src="/images/long-checklist.svg" class="project-icon" alt="The Giveth Milestone-Tracker">
+                  <h4>Giveth Milestone-tracker</h4>
+                  <p>The bread and butter of Giveth's platform, the milestonetracker is actively being used to track the development of the platform itself.
+                  </p>
               </li>
             </ul>
       </div>
@@ -206,7 +141,8 @@ The way I do it:
       </div>
           <div class="col d-flex padding-top justify-content-around">
                 <ul class="row d-flex features">
-                  <li>
+                  <li class="contracts">
+                    <img src="/assets/minime-white.svg" class="project-icon" alt="Mini Me">
                     <h4>Minime</h4>
                     <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
                       midstream to include new features in a decentralized fashion, without
@@ -214,21 +150,24 @@ The way I do it:
                       permission.
                     </p>
                   </li>
-                  <li>
+                  <li class="contracts">
+                    <img src="/images/placeholder.svg" class="project-icon" alt="Placeholder">
                     <h4>Vault</h4>
                     <p>The Vault Contract is designed to hold ether and safely automate payments
                        in a Dapp/DAO environment. It allows for a step-by-step decentralization
                        process as trust in the code base is built over time.
                     </p>
                   </li>
-                  <li>
+                  <li class="contracts">
+                    <img src="/assets/liquid-pledging.svg" class="project-icon" alt="Liquid Pledging">
                     <h4>Liquid Pledging</h4>
                     <p>One of Giveth core contracts we are working on enables a donor to
                       delegate authority over their donations in a simple gas efficient way,
                       following the principles of liquid democracy.
                     </p>
                   </li>
-                  <li>
+                  <li class="contracts">
+                    <img src="/images/placeholder.svg" class="project-icon" alt="Placeholder">
                     <h4>Milestone Payouts</h4>
                     <p>Our milestone contracts are able to keep
                       organizations and causes accountable to their supporters. Breaking down
@@ -242,31 +181,40 @@ The way I do it:
           </div>
 </section>
 
-<section id="unicorn-dac" class="container-fluid padding-top padding-bottom">
-  <div class="flex-column d-flex justify-content-center">
-      <h2 class="padding-top align-middle logo-font">Giveth and the Unicorn DAC</h2>
+<section id="unicorn-dac" class="container-fluid padding-top padding-bottom background-purple color-white">
+<div class="row d-flex justify-content-center unicorn-dac-row">
+  <div class="flex-column d-flex unicorn-dac-column">
+    <img src="/assets/unitest.png" class="unicorn-logo" alt="Giveth DAC logo">
+  </div>
+  <div class="flex-column d-flex unicorn-dac-column">
+      <h2 class="padding-top align-middle">The Unicorns of Giveth DAC</h2>
       <div class="text-block align-middle align-self-center text-bold padding-top">
-        Giveth is a Dapp (Donation application), developed by the Unicorn DAC (Decentralized Altruistic community) and is therefore considered to be a community led project - not an organization, not a charity, not a corporation.
+        Giveth is a Dapp (Donation application), developed by the Giveth DAC (Decentralized Altruistic community) and is therefore considered to be a community led project - not an organization, not a charity, not a corporation.
         <br><br>
-        The Unicorn DAC’s main goal is to develop the Giveth platform, it defines the team’s drive as supporting transparency, open-source development and collaborating with similar projects.
+        The individual members of the Giveth DAC call themselves Unicorns.
+        <br><br>
+        The Giveth DAC’s main goal is to develop the Giveth platform, the team’s drive is defined as supporting transparency, open-source development and collaboration with similar projects.
         <br><br>
         We consider similar initiatives co-creators and other DACs not as competitors. We share certain goals and we strive to make the world a better place with modern technology and community building.
       </div>
   </div>
+</div>
 </section>
 
 
   <section id="friends" class="container-fluid padding-top padding-bottom background-black">
     <div class="flex-row d-flex justify-content-center">
-        <h4 class="color-white">Unicorn Love</h4>
+        <h2 class="color-dark-grey">Unicorn Love <span class="fa fa-heart slack-icon"></span></h2>
     </div>
     <div class="flex-row d-flex flex-wrap justify-content-around friendsrow">
-        <img src="/images/friends/alicesi.png" class="img-fluid friends" alt="">
-        <img src="/images/friends/aragon.svg" class="img-fluid friends" alt="">
-        <img src="/images/friends/district0x.svg" class="img-fluid friends" alt="">
-        <img src="/images/friends/myetherwallet.svg" class="img-fluid friends" alt="">
-        <img src="/images/friends/statusim.svg" class="img-fluid friends" alt="">
-        <img src="/images/friends/swarmcity.svg" class="img-fluid friends" alt="">
+        <a href="https://alice.si"><img src="/images/friends/alicesi.svg" class="friends" alt="Alice.si"></a>
+        <a href="https://aragon.one"><img src="/images/friends/aragon.svg" class="friends" alt="Aragon"></a>
+        <a href="https://district0x.io"><img src="/images/friends/district0x.svg" class="friends" alt="District 0x"></a>
+    </div>
+    <div class="flex-row d-flex flex-wrap justify-content-around friendsrow">
+        <a href="https://myetherwallet.com"><img src="/images/friends/myetherwallet.svg" class="friends" alt="My Etherwallet"></a>
+        <a href="https://status.im"><img src="/images/friends/statusim.svg" class="friends" alt="Status Instant messenger"></a>
+        <a href="https://swarm.city"><img src="/images/friends/swarmcity.svg" class="friends" alt="Swarm City"></a>
     </div>
   </section>
 
