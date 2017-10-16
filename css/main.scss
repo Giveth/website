@@ -494,7 +494,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
 
 .text-block-large {
   text-align: justify;
-  max-width: 60vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
 @media (max-width: 920px) {
@@ -504,7 +505,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
   }
 
   .text-block-large {
-    max-width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 
