@@ -17,6 +17,7 @@ h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-align: center;
+  color: #351c75;
 }
 
 main {
@@ -57,6 +58,7 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
+    color: white;
   }
 
   p {
@@ -175,8 +177,9 @@ body {
   padding-right: 10vw;
 
 
-   h2 {
+   h4 {
      padding: 0.5rem;
+     color: white;
    }
 
    p {
@@ -193,7 +196,7 @@ body {
      color: white;
      list-style: none;
      background-color: #351c75;
-     padding: 2rem;
+     padding: 0.5rem;
 
      .project-icon {
        margin-left: auto;
@@ -549,6 +552,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+
+  h2 {
+    color: white;
+  }
 
   @media (max-width: 920px) {
   min-height: auto;
