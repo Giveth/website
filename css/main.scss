@@ -40,13 +40,14 @@ body {
 }
 
 #core-values {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 2rem;
 
   .value-icon {
     max-width: 5vw;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -60,6 +61,24 @@ body {
 
   p {
     align-self: baseline;
+  }
+
+  @media (max-width: 920px) {
+    li {
+      max-width: 60vw;
+    }
+
+    .value-icon {
+      max-width: 10vw;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .value-icon {
+      max-width: 20vw;
+      height: auto;
+    }
   }
 }
 
@@ -80,6 +99,14 @@ body {
   }
 }
 
+#friends {
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+}
+
 #hero {
 
   ul {
@@ -92,19 +119,52 @@ body {
   }
 
   .logo {
-    padding-top: 15vh;
-    min-height: 30vh;
-    min-width: 30vw;
+    min-height: 20vh;
+    min-width: 20vw;
   }
 
   .typelogo {
     min-width: 25vw;
     max-width: 25vw;
   }
+  .ethereum {
+    max-width: 10vw;
+    height: auto;
+  }
+
+
+  @media (max-width: 920px) {
+    .ethereum {
+      max-width: 20vw;
+      height: auto;
+    }
+
+    .logo {
+      max-height: 20vh;
+      width: auto;
+    }
+
+    .typelogo {
+      max-height: 25vh;
+      min-width: 50vw;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .ethereum {
+      max-width: 30vw;
+    }
+
+    .typelogo {
+      max-width: 50vw;
+      height: auto;
+    }
+  }
 }
 
 
 #transaction-flow {
+  padding-top: 4rem;
   padding-left: 10vw;
   padding-right: 10vw;
   text-align: justify;
@@ -121,8 +181,10 @@ body {
 
    p {
      text-align: justify;
-     padding: 0.5rem;
+     padding: 2rem;
    }
+
+
 
    li {
      align-items: center;
@@ -131,14 +193,14 @@ body {
      color: white;
      list-style: none;
      background-color: #351c75;
-     padding: 0.5rem;
+     padding: 2rem;
 
      .project-icon {
        margin-left: auto;
        margin-right: auto;
        display: block;
-       max-width: 10vw;
-       height: auto;
+       width: auto;
+       height: 20vh;
        padding-top: 1rem;
        padding-bottom: 1rem;
       }
@@ -148,11 +210,42 @@ body {
      }
 
      .contracts {
-         color: black;
+        color: black;
         background-color: #009b77;
       }
 
-   }
+     .contract-icon {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: auto;
+        height: 20vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      }
+    @media (max-width: 920px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      li {
+        padding: 1rem;
+      }
+
+      .project-icon {
+        width: 20vw;
+      }
+    }
+
+    @media (max-width: 650px) {
+      padding-left: 0px;
+      padding-right: 0px;
+
+      li {
+        padding: 0.5rem;
+      }
+    }
 
 
 
@@ -221,6 +314,9 @@ body {
   color: #351c75;
 }
 
+.color-yellow {
+  color: #dbb527;
+}
 
 .color-white {
   color: white;
@@ -259,6 +355,7 @@ body {
   background-position: center;
   justify-content: center;
 
+
   .gradient {
     opacity: 0.7;
     filter: alpha(opacity=70);
@@ -276,27 +373,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
   }
 }
 
-.ethereum {
-  max-width: 20vw;
-}
-
-
-@media (max-width: 920px) {
-  .ethereum {
-    max-width: 30vw;
-  }
-}
-
-@media (max-width: 650px) {
-  .ethereum {
-    max-width: 50vw;
-  }
-}
-
 .friendsrow {
   padding-top: 2rem;
   padding-left: 20vw;
   padding-right: 20vw;
+
+  @media (max-width: 920px) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .friends {
@@ -304,6 +394,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
   width: auto;
   padding: 0.5rem;
   display: flex;
+
+  @media (max-width: 920px) {
+  height: 10vw;
+  width: auto;
+  }
+
+  @media (max-width: 650px) {
+  height: 15vw;
+  width: auto;
+  }
 }
 
 .features {
@@ -326,6 +426,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
 @media (max-width: 920px) {
   .features li {
     min-width: 50%;
+    padding: 0.1rem;
+    margin: 0.1rem;
   }
 }
 
@@ -356,6 +458,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
 
 .hero-image-container {
   margin: 0px;
+  width: 100%;
+  height: 100%;
   /*
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -433,13 +537,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
 .unicorn-dac-row {
   padding-left: 10vw;
   padding-right: 10vw;
-  max-width: 100%;
+
+  @media (max-width: 920px) {
+  padding: auto;
+  }
 }
 
 .unicorn-dac-column {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+
+  @media (max-width: 920px) {
+  min-height: auto;
+  }
+
 /*
   background-image: url(../assets/unitest.png);
   opacity: 0.9;
@@ -462,6 +574,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
   width: auto;
   height: auto;
 }
+
 
 /*
 * {

@@ -23,52 +23,49 @@ The way I do it:
 
   <section id="hero" class="container-fluid justify-content-center cover-section">
     <div class="gradient">
-    <div class="row d-flex hero-image-container justify-content-center">
+    <div class="row d-flex hero-image-container align-items-center justify-content-center">
 
-        <div class="flex-column align-middle">
+        <div class="flex-column justify-content-center">
           <img class="hero-image img-fluid logo" src="/assets/Giveth-logo-white.svg" alt="">
-        <img class="hero-image img-fluid typelogo" src="/assets/Giveth-typelogo-white.svg" alt="">
-      </div>
-    </div>
-
-    <div class="flex-row d-flex align-middle padding-top ">
-      <div class="col padding-bottom color-white">
+        <img class="hero-image img-fluid typelogo padding-top" src="/assets/Giveth-typelogo-white.svg" alt="">
         <!--  <h1 class="p-2 headline">Giveth</h1> -->
-        <h2 class="tagline">Building the Future of Giving</h2>
+        <h2 class="tagline color-white padding-top">Building the Future of Giving</h2>
         <img class="img-fluid ethereum padding-top" src="/images/powered_by_ethereum.png" alt="">
         <h5 class="padding-top color-black"><a href="http://slack.giveth.io" class="btn btn-warning"><span class="fa fa-slack slack-icon"></span> Join the discussion on Slack</a></h5>
+
       </div>
     </div>
-
   </div>
   </section>
 
-<section id="core-values" class="container-fluid padding-top background-white justify-content-center background-purple color-white">
-  <div class="row d-flex hero-image-container justify-content-around flex-wrap">
-    <div class="flex-column justify-content-center content-block">
-      <img src="images/opensource.svg" class="img-fluid value-icon" alt="">
-      <h2 class="">Open Source<br>Giving</h2>
-      <p>
-        Giveth is a completely free and open source platform bringing community, transparency and accountability to charitable donations.
-      </p>
-    </div>
-    <div class="flex-column justify-content-center content-block">
-      <img src="images/community.svg" class="img-fluid value-icon" alt="">
-      <h2>Altruistic<br>Communities</h2>
-      <p>Decentralized Communities centered around shared values can create and support Campaign's that make the change they want to see.
-      </p>
-    </div>
-    <div class="flex-column justify-content-center content-block">
-      <img src="images/success.svg" class="img-fluid value-icon" alt="">
-      <h2>Connecting<br>& Rewarding</h2>
-      <p>Donations are not only used to support Campaigns but also
-          to build connections within the community.
-      </p>
-    </div>
+<section id="core-values" class="container-fluid background-white justify-content-center background-purple color-white">
+  <div class="row d-flex justify-content-around">
+    <ul class="features">
+      <li>
+        <img src="images/opensource.svg" class="img-fluid value-icon" alt="">
+        <h2 class="">Open-Source<br>Giving</h2>
+        <p>
+          Giveth is a completely free and open-source platform bringing community, transparency and accountability to charitable donations.
+        </p>
+      </li>
+      <li>
+        <img src="images/community.svg" class="img-fluid value-icon" alt="">
+        <h2>Altruistic<br>Communities</h2>
+        <p>Decentralized Communities centered around shared values can create and support Campaigns that make the change they want to see.
+        </p>
+      </li>
+      <li>
+        <img src="images/success.svg" class="img-fluid value-icon" alt="">
+        <h2>Connecting<br>& Rewarding</h2>
+        <p>Donations are not only used to support Campaigns but also
+            to build connections within the community.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
 
-<section id="transaction-flow" class="container-fluid padding-top padding-bottom background-white">
+<section id="transaction-flow" class="container-fluid padding-bottom background-white">
   <div class="flex-row justify-content-center">
       <h2>Transparent donation flow with 'Liquid Pledging'</h2>
   </div>
@@ -94,7 +91,7 @@ The way I do it:
   <div class="col">
     <div class ="flex-row d-flex justify-content-around align-middle padding-bottom flex-wrap">
         <div class="padding-top align-middle">
-          <h2 class="padding-top align-middle">We strongly believe in the power of open source!
+          <h2 class="padding-top align-middle">We strongly believe in the power of open-source!
             <br><br>
             All of our software is considered a gift to the Ethereum community.
           </h2>
@@ -110,7 +107,7 @@ The way I do it:
             <br><br>
             We hope to help projects use our modular system to test their innovative smart contracts and UIs with real money in a low risk environment. Imagine starting a charity to help alleviate homelessness in your hometown while alpha testing an experimental decentralized governance system you plan to use in your project.
             <br><br>
-            With Giveth, you can have live smart contract testing while making the world a better place! And because of Giveth's open source nature, if a decentralized governance protocol or any other smart contract is used on the platform successfully it can easily achieve network effect and be utilized by other DACs to aid in their cause. Maximizing #blockchain4good!
+            With Giveth, you can have live smart contract testing while making the world a better place! And because of Giveth's open-source nature, if a decentralized governance protocol or any other smart contract is used on the platform successfully it can easily achieve network effect and be utilized by other DACs (Decentralized Altruistic Communities) to aid in their cause. Maximizing #blockchain4good!
           </div>
         </div>
       </div>
@@ -125,15 +122,21 @@ The way I do it:
             <ul class="row d-flex features projects">
               <li>
                   <img src="/assets/dapp-logo-alpha.svg" class="project-icon" alt="The Giveth Donation Application">
-                  <h4>Giveth's MLP Donation Application</h4>
-                  <p>The first working prototype of the full Giveth platform is live on testnet! We are in alpha stage testing but will open it up to the world very soon.
+                  <h4>Giveth Donation Application</h4>
+                  <p>The first working prototype, our minumium loveable product, of the full Giveth platform is live on testnet! We are in alpha stage testing but will open it up to the world very soon. A preview build can be accessed right now.
                   </p>
+                  <div class="col d-flex justify-content-center">
+                    <a href="https://mvp.giveth.io" class="btn btn-warning">Giveth Donation Application</a>
+                  </div>
               </li>
               <li>
                   <img src="/images/long-checklist.svg" class="project-icon" alt="The Giveth Milestone-Tracker">
                   <h4>Giveth's PoC DApp</h4>
                   <p>Donations have built the Giveth platform, and every wei spent has passed through our milestone smart contracts with the details of each expenditure recorded on the Ethereum blockchain.
                   </p>
+                  <div class="col d-flex justify-content-center">
+                    <a href="https://dapp.giveth.io" class="btn btn-warning">Legacy Milestonetracker</a>
+                  </div>
               </li>
             </ul>
       </div>
@@ -144,24 +147,28 @@ The way I do it:
           <div class="col d-flex padding-top justify-content-around">
                 <ul class="row d-flex features">
                   <li class="contracts">
-                    <img src="/assets/minime-white.svg" class="project-icon" alt="Mini Me">
+                    <img src="/assets/minime-white.svg" class="contract-icon" alt="Mini Me">
                     <h4>MiniMe Token</h4>
-                    <p>The MiniMe token makes it trivial for ANYONE to upgrade a Dapp/DAO
+                    <p>The MiniMe token makes it trivial for anyone to upgrade a DApp/DAO
                       midstream to include new features in a decentralized fashion, without
                       having to migrate to a new token contract and without having to ask for
                       permission.
+                      <br><br>
+                      <a href="https://medium.com/giveth/the-minime-token-open-sourced-by-giveth-2710c0210787" class="color-yellow"> Learn more...</a>
                     </p>
                   </li>
                   <li class="contracts">
-                    <img src="/images/placeholder.svg" class="project-icon" alt="Placeholder">
+                    <img src="/images/vault.svg" class="contract-icon" alt="Placeholder">
                     <h4>Vault</h4>
                     <p>The Vault Contract is designed to hold ether and safely automate payments
                        in a DApp/DAO environment. It allows for a step-by-step decentralization
                        process as trust in the code base is built over time.
+                       <br><br>
+                       <a href="https://medium.com/giveth/the-vault-contract-open-sourced-by-giveth-fe2261f7b91b" class="color-yellow"> Learn more...</a>
                     </p>
                   </li>
                   <li class="contracts">
-                    <img src="/assets/liquid-pledging.svg" class="project-icon" alt="Liquid Pledging">
+                    <img src="/assets/liquid-pledging.svg" class="contract-icon" alt="Liquid Pledging">
                     <h4>Liquid Pledging</h4>
                     <p>Enables direct oversight of the management of funds, allowing the Giver to
                       delegate authority over their donations in an efficient way,
@@ -169,11 +176,11 @@ The way I do it:
                     </p>
                   </li>
                   <li class="contracts">
-                    <img src="/images/placeholder.svg" class="project-icon" alt="Placeholder">
+                    <img src="/images/milestone-payouts.svg" class="contract-icon" alt="Placeholder">
                     <h4>Milestone Payouts</h4>
                     <p>Our milestone contracts keep Campaigns
                       accountable to their supporters. Breaking down
-                      lump sum amounts to help all types of organizations (for profit or non-profits) be assured that contributed funds are
+                      lump sum amounts to help all types of organizations (for-profit or non-profits) be assured that contributed funds are
                       well spent.
                     </p>
                   </li>
@@ -181,19 +188,19 @@ The way I do it:
           </div>
 </section>
 
-<section id="unicorn-dac" class="container-fluid padding-top padding-bottom background-purple color-white">
-<div class="row d-flex justify-content-center unicorn-dac-row">
+<section id="unicorn-dac" class="container-fluid padding-top padding-bottom background-purple color-white justify-content-center">
+<div class="flex-row d-flex justify-content-center unicorn-dac-row flex-wrap">
   <div class="flex-column d-flex unicorn-dac-column">
     <img src="/assets/unitest.png" class="unicorn-logo" alt="Giveth DAC logo">
   </div>
   <div class="flex-column d-flex unicorn-dac-column">
       <h2 class="padding-top align-middle">The Giveth DAC</h2>
       <div class="text-block align-middle align-self-center text-bold padding-top">
-        Giveth's DApp (Donation application) is being developed by the Giveth DAC (Decentralized Altruistic Community). We are an open source community led project and will not derive any direct profit from the platform. We strive to model the DAC concept as one of the first non-profit blockchain based entities.
+        Giveth's DApp (Donation Application) is being developed by the Giveth DAC (Decentralized Altruistic Community). We are an  community-led project and will not derive any direct profit from the platform. We strive to model the DAC concept as one of the first non-profit blockchain based entities.
         <br><br>
         The individual members of the Giveth DAC call themselves Unicorns and are a rag tag group of white hat hackers and social pioneers trying to make the world a better place.
         <br><br>
-        The Giveth DAC’s main goal is to develop the Giveth platform, the team’s drive is defined as supporting transparency, open-source development and collaboration.
+        Our common goal is to develop the Giveth platform, the team’s drive is defined as supporting transparency, open-source development, co-creation and collaboration.
         <br><br>
         We consider all similar #blockchain4good projects as potential collaborators. We share certain goals and we strive to make the world a better place with modern technology and community building.
       </div>
@@ -205,6 +212,13 @@ The way I do it:
   <section id="friends" class="container-fluid padding-top padding-bottom background-black">
     <div class="flex-row d-flex justify-content-center">
         <h2 class="color-dark-grey">Unicorn Love <span class="fa fa-heart slack-icon"></span></h2>
+    </div>
+    <div class="flex-row d-flex justify-content-center">
+        <p class="color-white padding-top">
+          Our smart contracts are being used widely in the Ethereum community,
+          <br><br>
+          check out what our friends are doing
+        </p>
     </div>
     <div class="flex-row d-flex flex-wrap justify-content-around friendsrow">
         <a href="https://alice.si"><img src="/images/friends/alicesi.svg" class="friends" alt="Alice.si"></a>
