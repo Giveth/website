@@ -1,0 +1,31 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: Giveth
+description: Charitable giving on the blockchain
+owner: Giveth # or company name
+first_published: 2017 # if migrating another site, the year of your first publish
+email: hi@giveth.io
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://giveth-prototyping.netlify.com" # the base hostname & protocol for your site
+theme: minima
+slack: http://slack.giveth.io
+twitter_username: givethio
+github_username: giveth
+facebook_username: givethio
+youtube: https://www.youtube.com/channel/UClfutpRoY0WTVnq0oB0E0wQ
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+sass:
+    sass_dir: _sass
+#  style: compressed
+permalink: /:categories/:title
+
+collections:
+  blog:
+    output: true
