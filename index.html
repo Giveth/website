@@ -31,7 +31,7 @@ The way I do it:
         <!--  <h1 class="p-2 headline">Giveth</h1> -->
         <h2 class="tagline color-white padding-top">Building the Future of Giving</h2>
         <img class="img-fluid ethereum padding-top" src="/images/powered_by_ethereum.png" alt="">
-        <h5 class="padding-top color-black"><a href="http://slack.giveth.io" class="btn btn-warning"><span class="fa fa-slack slack-icon"></span> Join the discussion on Slack</a></h5>
+        <h5 class="padding-top color-black"><a href="https://slack.giveth.io" class="btn btn-warning"><span class="fa fa-slack slack-icon"></span> Join the discussion on Slack</a></h5>
 
       </div>
     </div>
@@ -39,8 +39,8 @@ The way I do it:
   </section>
 
 <section id="core-values" class="container-fluid background-white justify-content-center background-purple color-white">
-  <div class="row d-flex justify-content-around">
-    <ul class="features">
+  <div class="row d-flex">
+    <ul class="features justify-content-around">
       <li>
         <img src="images/opensource.svg" class="img-fluid value-icon" alt="">
         <h2 class="">Open-Source<br>Giving</h2>
@@ -99,7 +99,7 @@ The way I do it:
             <img src="images/github.svg" class="img-fluid padding-top align-self-center" style="max-width: 20vw" alt="Github is social coding">
               <div class="flex-row d-flex padding-top justify-content-center">
                 <h6>
-                  <a href="http://github.com/Giveth/" class="btn btn-warning">Contribute to development</a>
+                  <a href="https://github.com/Giveth/" class="btn btn-warning">Contribute to development</a>
                 </h6>
               </div>
           </div>
@@ -116,14 +116,25 @@ The way I do it:
     </div>
   </div>
   <div class="flex-row d-flex padding-top justify-content-center">
-    <h2>Our Projects</h2>
+    <h2 class="color-purple">Our Projects</h2>
   </div>
       <div class="col d-flex padding-top justify-content-around">
+
+<!--
+        <div class="card features projects background-purple">
+          <img class="card-img-top project-icon" src="/assets/dapp-logo-alpha.svg" alt="The Giveth Donation Application">
+          <div class="card-body justify-content-center">
+            <h4 class="card-title">Giveth Donation Application</h4>
+            <p class="card-text">The first working prototype, our minumium loveable product,Giveth Donation Application of the full Giveth platform is live on testnet! We are in alpha stage testing but will open it up to the world very soon.</p>
+            <a href="https://mvp.giveth.io" class="btn btn-warning">Giveth Donation Application</a>
+          </div>
+        </div>
+-->
             <ul class="row d-flex features projects">
               <li>
                   <img src="/assets/dapp-logo-alpha.svg" class="project-icon" alt="The Giveth Donation Application">
                   <h4>Giveth Donation Application</h4>
-                  <p>The first working prototype, our minimum loveable product, of the full Giveth platform is live on testnet! We are in alpha stage testing but will open it up to the world very soon.
+                  <p class="color-white">The first working prototype, our minumium loveable product,Giveth Donation Application of the full Giveth platform is live on testnet! We are in alpha stage testing but will open it up to the world very soon.
                   </p>
                   <div class="col d-flex justify-content-center">
                     <a href="https://mvp.giveth.io" class="btn btn-warning">Giveth Donation Application</a>
@@ -142,11 +153,11 @@ The way I do it:
       </div>
 
       <div class="flex-row d-flex padding-top justify-content-center">
-        <h2>Our Smart Contracts</h2>
+        <h2 class="color-green">Our Smart Contracts</h2>
       </div>
           <div class="col d-flex padding-top justify-content-around">
-                <ul class="row d-flex features">
-                  <li class="contracts">
+                <ul class="row d-flex features contracts">
+                  <li>
                     <img src="/assets/minime-white.svg" class="contract-icon" alt="Mini Me">
                     <h4>MiniMe Token</h4>
                     <p>The MiniMe token makes it trivial for anyone to upgrade a DApp/DAO
@@ -157,7 +168,7 @@ The way I do it:
                       <a href="https://medium.com/giveth/the-minime-token-open-sourced-by-giveth-2710c0210787" class="color-yellow"> Learn more...</a>
                     </p>
                   </li>
-                  <li class="contracts">
+                  <li>
                     <img src="/images/vault.svg" class="contract-icon" alt="Placeholder">
                     <h4>Vault</h4>
                     <p>The Vault Contract is designed to hold ether and safely automate payments
@@ -167,7 +178,7 @@ The way I do it:
                        <a href="https://medium.com/giveth/the-vault-contract-open-sourced-by-giveth-fe2261f7b91b" class="color-yellow"> Learn more...</a>
                     </p>
                   </li>
-                  <li class="contracts">
+                  <li>
                     <img src="/assets/liquid-pledging.svg" class="contract-icon" alt="Liquid Pledging">
                     <h4>Liquid Pledging</h4>
                     <p>Enables direct oversight of the management of funds, allowing the Giver to
@@ -175,8 +186,8 @@ The way I do it:
                       following the principles of liquid democracy.
                     </p>
                   </li>
-                  <li class="contracts">
-                    <img src="/images/milestone-payouts.svg" class="contract-icon" alt="Placeholder">
+                  <li>
+                    <img src="/images/milestone-payouts.svg" class="contract-icon" alt="Milestone Payouts">
                     <h4>Milestone Payouts</h4>
                     <p>Our milestone contracts keep Campaigns
                       accountable to their supporters. Breaking down

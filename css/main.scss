@@ -40,6 +40,33 @@ body {
 
 }
 
+
+.features {
+  display: flex;
+  list-style: none;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: block;
+    text-align: justify;
+    border-radius: 1rem;
+  }
+}
+
+.card {
+  p {
+      color: white;
+  }
+
+  a {
+    align-self: center;
+  }
+}
+
 #core-values {
   padding-top: 4rem;
   padding-left: 10vw;
@@ -169,7 +196,7 @@ body {
   padding-top: 4rem;
   padding-left: 10vw;
   padding-right: 10vw;
-  text-align: justify;
+  text-align: left;
 }
 
 #smart-contracts {
@@ -183,20 +210,16 @@ body {
    }
 
    p {
-     text-align: justify;
-     padding: 2rem;
+     text-align: left;
    }
-
-
 
    li {
      align-items: center;
      display: block;
-     text-align: justify;
+     text-align: left;
      color: white;
      list-style: none;
-     background-color: #351c75;
-     padding: 0.5rem;
+     padding: 2rem;
 
      .project-icon {
        margin-left: auto;
@@ -206,15 +229,6 @@ body {
        height: 20vh;
        padding-top: 1rem;
        padding-bottom: 1rem;
-      }
-
-     .projects {
-        background-color: #351c75;
-     }
-
-     .contracts {
-        color: black;
-        background-color: #009b77;
       }
 
      .contract-icon {
@@ -227,13 +241,14 @@ body {
         padding-bottom: 1rem;
       }
 
-      }
+    }
+
     @media (max-width: 920px) {
       padding-left: 1rem;
       padding-right: 1rem;
 
       li {
-        padding: 1rem;
+        padding: 2rem;
       }
 
       .project-icon {
@@ -241,17 +256,27 @@ body {
       }
     }
 
-    @media (max-width: 650px) {
-      padding-left: 0px;
-      padding-right: 0px;
+  .projects li {
+       background-color: #351c75;
+  }
 
-      li {
-        padding: 0.5rem;
-      }
+  .contracts li {
+       background-color: #009b77;
+       min-width: 40%;
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    li {
+          padding: 0.5rem;
+        }
+    .contracts li {
+      min-width: 100%;
     }
 
-
-
+      }
  }
 
  #unicorn-dac {
@@ -279,26 +304,26 @@ body {
 
 .background-white {
   background-color: white;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 .background-light-grey {
   background-color: #d2d2d2;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 .background-dark-grey {
   background-color: #787878;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 .background-purple {
   background-color: #351c75;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 
@@ -373,6 +398,20 @@ background: -moz-linear-gradient(-45deg, #00acc1 0%, #009b77 100%); /* FF3.6-15 
 background: -webkit-linear-gradient(-45deg, #00acc1 0%,#009b77 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #00acc1 0%,#009b77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', endColorstr='#009b77',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+}
+
+@media (max-width: 920px) {
+  .features li {
+    min-width: 50%;
+    padding: 0.1rem;
+    margin: 0.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .features li {
+    min-width: 90%;
   }
 }
 
