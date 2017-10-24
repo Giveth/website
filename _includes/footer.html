@@ -1,6 +1,6 @@
 <!-- Footer -->
-<footer id="footer" class="container-fluid background-green">
-  <ul class="col d-flex justify-content-center hide-list-style">
+<footer id="footer" class="container-fluid background-black">
+  <ul class="col d-flex justify-content-center hide-list-style flex-wrap">
 
     {% if site.slack %}
       <li>
@@ -17,6 +17,12 @@
     {% if site.github_username %}
       <li>
           <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.reddit %}
+      <li>
+          <a href="https://reddit.com/r/{{ site.reddit }}"><i class="fa fa-reddit"></i></a>
       </li>
     {% endif %}
 
