@@ -20,6 +20,12 @@
       </li>
     {% endif %}
 
+    {% if site.reddit %}
+      <li>
+          <a href="https://reddit.com/r/{{ site.reddit }}"><i class="fa fa-reddit"></i></a>
+      </li>
+    {% endif %}
+
     {% if site.facebook_username %}
       <li>
           <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
