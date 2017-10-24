@@ -575,8 +575,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 }
 
 .github-icon {
+  width: 10vw;
+  height: auto;
+
+  @media (max-width: 920px) {
+    min-width: 20%;
+    }
+
   @media (max-width: 650px) {
-    min-width: 50%;
+    min-width: 40%;
     }
 }
 
