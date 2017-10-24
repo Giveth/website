@@ -208,6 +208,22 @@ body {
   }
 }
 
+#open-source-giving {
+    .text-block {
+      max-width: 50vw;
+    }
+
+    @media (max-width: 650px) {
+      .text-block {
+        max-width: 100%;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+}
 
 #transaction-flow {
   padding-top: 4rem;
@@ -714,18 +730,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
   padding: 0.5rem;
   display: flex;
   max-width: 35vw;
-  height: auto;
+  min-height: auto;
   opacity: 1;
   filter: alpha(opacity=100);
   box-shadow: 0px 0px 20px 5px #e4e4e4;
+
+  @media (max-width: 920px) {
+  max-width: 80vw;
+  }
 }
 
 .lp-diagram {
-  padding: 0.5rem;
   display: flex;
-  min-height: 50vh;
-  max-width: 90vw;
+  min-width: 70vw;
+  min-height: 70vh;
   opacity: 1;
+
+  @media (max-width: 920px) {
+  padding-top: 1rem;
+  min-width: 100vw;
+  min-height: 40vh;
+  }
 }
 
 
