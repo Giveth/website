@@ -72,6 +72,15 @@ body {
   }
 }
 
+#communities {
+  @media (max-width: 920px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+}
+
 #core-values {
   padding-top: 4rem;
   padding-left: 10vw;
@@ -255,6 +264,11 @@ body {
      color: white;
    }
 
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
    p {
      text-align: left;
    }
@@ -326,7 +340,7 @@ body {
       min-width: 100%;
     }
 
-      }
+  }
  }
 
 /*
@@ -548,6 +562,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
   .features li {
     min-width: 90%;
   }
+}
+
+.github-icon {
+  @media (max-width: 650px) {
+    min-width: 50%;
+    }
 }
 
 .headline {
