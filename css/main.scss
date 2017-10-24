@@ -126,6 +126,8 @@ body {
 }
 
 #developers-corner {
+  overflow: hidden;
+
   .contract-icon {
      margin-left: auto;
      margin-right: auto;
@@ -436,6 +438,7 @@ body {
 .container-fluid {
   justify-content: center;
   padding: 0px;
+  display: block;
 }
 
 .content-block {
@@ -765,17 +768,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 }
 
 .lp-diagram {
-  display: flex;
-  min-width: 70vw;
-  min-height: 70vh;
-  opacity: 1;
-
-  @media (max-width: 920px) {
-  padding-top: 1rem;
-  min-width: 100vw;
-  min-height: 40vh;
-  }
+  width: 960px;
+  height: 540px;
+  position: absolute;
 }
+
+.scroll-horizontal {
+  margin: 0 auto;
+  width: 100vw;
+  height: 540px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
 
 
 /*
