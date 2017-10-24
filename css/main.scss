@@ -742,6 +742,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 
 
 .community-column {
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   @media (max-width: 920px) {
   min-height: auto;
