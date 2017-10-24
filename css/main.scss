@@ -698,10 +698,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 .unicorn-dac-column {
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 50vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   @media (max-width: 920px) {
-  min-height: auto;
+
   }
 
 /*
@@ -716,15 +718,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 }
 
 .unicorn-logo {
-  width: 30vw;
+  max-width: 30vw;
   height: auto;
 
   @media (max-width: 920px) {
-  width: 40vw;
+  max-width: 40vw;
   }
 
-  @media (max-width: 920px) {
-  width: 80vw;
+  @media (max-width: 650px) {
+  max-width: 50vw;
   }
 }
 
@@ -740,11 +742,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 
 
 .community-column {
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
 
   @media (max-width: 920px) {
   min-height: auto;
