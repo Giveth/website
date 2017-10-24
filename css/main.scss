@@ -2,6 +2,17 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+
+#header {
+  .navbar {
+    background-color: #2c0d54 !important;
+    opacity: 0.9;
+    filter: alpha(opacity=70);
+  }
+
+}
+
+
 * {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -10,9 +21,9 @@
 
 h1, h2, h3, h4, h5, h6, .logo-font {
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
-  color: #351c75;
+  color: #2c0d53;
 }
 
 main {
@@ -32,7 +43,6 @@ body {
 
   margin: 0px;
   padding: 0px;
-
 }
 
 
@@ -104,6 +114,18 @@ body {
       height: auto;
     }
   }
+}
+
+#developers-corner {
+  .contract-icon {
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     width: auto;
+     height: 20vh;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+   }
 }
 
 #footer {
@@ -198,9 +220,22 @@ body {
   padding-left: 10vw;
   padding-right: 10vw;
 
+  background-image: url(../assets/projects-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 1;
+  filter: alpha(opacity=100);
+
+  color: white;
 
    h4 {
      padding: 0.5rem;
+     color: white;
+   }
+
+   .contracts h4 {
      color: white;
    }
 
@@ -212,7 +247,6 @@ body {
      align-items: center;
      display: block;
      text-align: left;
-     color: white;
      list-style: none;
      padding: 2rem;
 
@@ -252,12 +286,16 @@ body {
     }
 
   .projects li {
-       background-color: #351c75;
+  /*  border: 5px solid #2c0d53; */
   }
 
   .contracts li {
-       background-color: #009b77;
-       min-width: 40%;
+  /*  border: 5px solid #2A6813; */
+    min-width: 35%;
+    }
+
+  .contracts h2 h4 {
+          color: #0e2958;
   }
 
   @media (max-width: 650px) {
@@ -267,14 +305,12 @@ body {
     li {
           padding: 0.5rem;
         }
+
     .contracts li {
       min-width: 100%;
     }
 
       }
- }
-
- #unicorn-dac {
  }
 
 /*
@@ -292,15 +328,21 @@ body {
 }
 
 .background-green {
-  background-color: #009b77;
+  background-color: #2A6813;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
 
 .background-white {
   background-color: white;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.background-white-transparent {
+  background-color: white;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
 .background-light-grey {
@@ -316,25 +358,33 @@ body {
 }
 
 .background-purple {
-  background-color: #351c75;
+  background-color: #2c0d53;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
-
-
-// Safari flexbox bug workaround
-.col { border: 1px solid transparent; }
 
 .color-black {
   color: black;
 }
 
+.color-blue {
+  color: #0e2958;
+}
+
+.color-blue-steel {
+  color: #155388;
+}
+
 .color-green {
-  color: #009b77;
+  color: #2A6813;
 }
 
 .color-purple {
-  color: #351c75;
+  color: #2c0d53;
+}
+
+.color-teal {
+  color: #6b98a7;
 }
 
 .color-yellow {
@@ -354,7 +404,6 @@ body {
 }
 
 .container-fluid {
-  // max-width: 1200px;
   justify-content: center;
   padding: 0px;
 }
@@ -370,6 +419,7 @@ body {
 
 .cover-section {
   min-height: 100vh;
+  max-width: 100%;
   text-align: center;
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -392,15 +442,16 @@ body {
     filter: alpha(opacity=70);
     height: 100vh;
     width: 100%;
+    padding: 0px;
     position: absolute;
 
 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00acc1+0,009b77+100 */
-background: #00acc1; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #00acc1 0%, #009b77 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #00acc1 0%,#009b77 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #00acc1 0%,#009b77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', endColorstr='#009b77',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b75a7+0,009b77+100 */
+background: #6b75a7; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #6b75a7 0%, #2c0d54 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #6b75a7 0%,#2c0d54 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #6b75a7 0%,#2c0d54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', endColorstr='#2c0d54',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
  }
@@ -456,7 +507,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
 .features {
   display: flex;
   list-style: none;
-  padding: 0;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -621,11 +671,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acc1', end
   height: auto;
 }
 
+
+.community-row {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  @media (max-width: 920px) {
+  padding: auto;
+  }
+}
+
+
+.community-column {
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (max-width: 920px) {
+  min-height: auto;
+  }
+
+/*
+  background-image: url(../assets/unitest.png);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: relative;
+  background-position: center;
+*/
+}
+
+.community-picture {
+  min-width: 20vw;
+  max-width: 20vw;
+  height: auto;
+}
+
 .screenshot {
   padding: 0.5rem;
   display: flex;
-  width: auto;
+  max-width: 35vw;
   height: auto;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  box-shadow: 0px 0px 20px 5px #e4e4e4;
+}
+
+.lp-diagram {
+  padding: 0.5rem;
+  display: flex;
+  min-height: 50vh;
+  max-width: 90vw;
+  opacity: 1;
 }
 
 
