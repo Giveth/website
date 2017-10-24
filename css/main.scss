@@ -683,10 +683,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
   justify-content: center;
   min-height: 80vh;
 
-  h2 {
-    color: white;
-  }
-
   @media (max-width: 920px) {
   min-height: auto;
   }
@@ -705,6 +701,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 .unicorn-logo {
   width: 30vw;
   height: auto;
+
+  @media (max-width: 920px) {
+  width: 40vw;
+  }
+
+  @media (max-width: 920px) {
+  width: 80vw;
+  }
 }
 
 
