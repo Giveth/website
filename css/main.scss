@@ -771,9 +771,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 
 .screenshot {
   padding: 0.5rem;
+  padding-top: 1rem;
   display: flex;
   max-width: 35vw;
-  min-height: auto;
+  height: auto;
   opacity: 1;
   filter: alpha(opacity=100);
   box-shadow: 0px 0px 20px 5px #e4e4e4;
