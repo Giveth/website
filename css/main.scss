@@ -73,7 +73,13 @@ body {
 }
 
 #communities {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
   @media (max-width: 920px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     h2 {
       font-size: 18px;
     }
