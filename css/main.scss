@@ -768,24 +768,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b75a7', end
 */
 }
 
-.community-picture {
+.graphic {
   min-width: 20vw;
   max-width: 20vw;
   height: auto;
 }
 
-.screenshot {
-  padding: 0.5rem;
-  padding-top: 1rem;
-  display: flex;
-  max-width: 35vw;
+.graphic-portrait {
+  min-width: 20vw;
+  max-width: 20vw;
   height: auto;
-  opacity: 1;
-  filter: alpha(opacity=100);
+
+    @media (max-width: 650) {
+      min-width: 50vw;
+      max-width: 50vw;
+      height: auto;
+    }
+}
+
+.screenshot {
+  min-width: 50vw;
+  max-width: 50vw;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  height: auto;
   box-shadow: 0px 0px 20px 5px #e4e4e4;
 
   @media (max-width: 920px) {
-  max-width: 80vw;
+    max-width: 80vw;
+  }
+}
+
+.screenshot-portrait {
+  min-width: 20vw;
+  max-width: 20vw;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  height: auto;
+
+  box-shadow: 0px 0px 20px 5px #e4e4e4;
+
+  @media (max-width: 650px) {
+    min-width: 50vw;
+    max-width: 50vw;
+    height: auto;
   }
 }
 
