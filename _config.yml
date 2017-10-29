@@ -3,12 +3,12 @@
 
 # Site settings
 title: Giveth
-description: Charitable giving on the blockchain
+description: Charitable giving on the blockchain - revolution.eth
 owner: Giveth # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: hi@giveth.io
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://giveth-prototyping.netlify.com" # the base hostname & protocol for your site
+url: "https://giveth.io" # the base hostname & protocol for your site
 theme: minima
 slack: https://slack.giveth.io
 twitter_username: givethio
