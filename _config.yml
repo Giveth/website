@@ -30,3 +30,6 @@ permalink: /:categories/:title
 collections:
   blog:
     output: true
+
+plugins:
+  - jekyll-sitemap
