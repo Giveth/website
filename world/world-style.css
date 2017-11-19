@@ -2,9 +2,13 @@
   margin-top: 100px;
 }
 
+#world-svg-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 #world svg {
-  margin-left: -90px;
-  overflow: hidden;
+  margin-left: -280px;
 }
 
 .country {
