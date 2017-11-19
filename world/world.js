@@ -15,7 +15,7 @@
     var graticule = d3.geo.graticule()
         .extent([[-180, -90], [180 - 0.1, 90 - 0.1]]);
 
-    var svg = d3.select("#world").append("svg")
+    var svg = d3.select("#world-svg-container").append("svg")
         .attr("width", width)
         .attr("height", height);
 
@@ -87,3 +87,11 @@
                 .each("end", step);
         }
     });
+
+    // Making the globe responsive, it's not that straightoward, "hacky" approach with magic numbers and CSS string concatenation
+    $(window).resize(function() {
+        var containerWidth = $("#world-svg-container").width();
+        var scale = containerWidth / 480;
+        $("#world-svg-container").css({ "transform" : "scale(" + scale + ")" });
+    }).trigger("resize"); // kicking off the resize handler on the initial load
+
