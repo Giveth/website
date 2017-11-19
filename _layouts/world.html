@@ -6,7 +6,6 @@
 
   <body class="landing">
 
-    <!-- Page Wrapper -->
     <div id="page-wrapper">
 
       {% include header.html %}
@@ -14,13 +13,13 @@
       {{ content }}
 
     </div>
-<!--ADDED by geleeroyale: Google Analytics-->
-        {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-        {% endif %}
-    <div>
-      {% include footer.html %}
-    </div>
+
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
+    {% include footer.html %}
+
   </body>
 
 </html>

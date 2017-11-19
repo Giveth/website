@@ -3,15 +3,13 @@ layout: world
 ---
 <main>
 
-<section id="world" class="container-fluid justify-content-center">
-    <div class="row">
-      <h2>Unicorn distribution:</h2>
-    </div>
-    <div class="row justify-content-center">
-      <div class="flex-column d-flex justify-content-center">
-        <script class="world" src="{{ "/world/world.js" | prepend: site.baseurl }}"></script>
-      </div>
-  </div>
+<section id="world">
+    
+    <h2>Unicorn distribution:</h2>
+    <div id="world-svg"></div>
+
 </section>
+
+<script src="{{ "/world/world.js" | prepend: site.baseurl }}"></script>
 
 </main>

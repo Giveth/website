@@ -15,7 +15,7 @@
     var graticule = d3.geo.graticule()
         .extent([[-180, -90], [180 - 0.1, 90 - 0.1]]);
 
-    var svg = d3.select("#world").append("svg")
+    var svg = d3.select("#world-svg").append("svg")
         .attr("width", width)
         .attr("height", height);
 
@@ -59,7 +59,7 @@
             return selectCountries.indexOf(c.id) >= 0;
         });
 
-        step();
+        // step();
 
         function step() {
 
@@ -87,3 +87,15 @@
                 .each("end", step);
         }
     });
+
+    // Making the globe responsive, it's not that straightoward, "hacky" approach with magic numbers and CSS string concatenation
+    $(window).resize(function() {
+        if (window.innerWidth < 500) {
+            var scale = (innerWidth - 100) / 400;
+            $("#world svg").css({ "transform" : "scale(" + scale + ")", "margin-left" : (-90 + (500 - window.innerWidth)) + "px" });
+        } else {
+            $("#world svg").css({ "transform" : "none", "margin-left" : "-90px" }); // restoring initial values
+        }
+    }).trigger("resize");
+
+
