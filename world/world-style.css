@@ -1,7 +1,14 @@
 #world {
-  margin-top: 15vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-top: 100px;
+}
+
+#world-svg-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#world svg {
+  margin-left: -280px;
 }
 
 .country {
@@ -30,9 +37,4 @@ text {
     font-size: 36px;
     font-weight: bold;
     text-anchor: middle;
-}
-
-.world {
-  width: 100%;
-  height: auto;
 }
