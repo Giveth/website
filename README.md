@@ -1,9 +1,32 @@
 # Giveth website
-The Giveth website is using Netlify CMS, Bootstrap 4 and is built with Jekyll
+The Giveth website is using Jekyll, Netlify CMS, and Bootstrap 4.
 
-## Getting started
+## Run your own installation
 
-### Mac OS X
+1 - Star the repo and fork it
+
+2 - Clone your repo
+
+3 - Install Jekyll:
+
+Jekyll requires Ruby, this specific build also requires some additional packages (these may change as well).
+
+Please refer to the official Jekyll Documentation for installing Jekyll:
+
+[GNU/Linux, Unix, or macOS](https://jekyllrb.com/docs/installation/)
+
+[Windows](https://jekyllrb.com/docs/windows/)
+
+3 - Run ```bundle install``` to install additional dependencies
+
+4 - Run ```jekyll serve``` to initiate a local build and run a local webserver.
+
+5 - If you run into problems because your version of Jekyll is newer then ours, consider running ```bundle exec jekyll serve```
+
+*Congratulations!* You can now edit the source files and immediately see the changes in your browser (should be [http://localhost:4000/](http://localhost:4000/)).
+
+
+### Tested routine for Mac OS X
 
 * need to have [Jekyll](https://jekyllrb.com/) installed:
 ```gem install jekyll bundler```
@@ -30,7 +53,7 @@ xcode-select --install
 jekyll serve
 ```
 
-YMMV - your mileage may vary - potentially it will just work, 
+YMMV - your mileage may vary - potentially it will just work,
 
 ## Technologies used
 * Created from ```jekyll new```
