@@ -1,6 +1,12 @@
 <footer id="footer" class="container-fluid background-black">
   <ul class="col d-flex justify-content-center hide-list-style flex-wrap">
 
+    {% if site.medium %}
+      <li>
+        <a href="{{ site.medium }}"><i class="fa fa-medium"></i></a>
+      </li>
+    {% endif %}
+
     {% if site.slack %}
       <li>
         <a href="{{ site.slack }}"><i class="fa fa-slack"></i></a>

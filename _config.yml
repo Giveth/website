@@ -10,6 +10,7 @@ email: hi@giveth.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://giveth.io" # the base hostname & protocol for your site
 theme: minima
+medium: https://medium.com/giveth/
 slack: https://slack.giveth.io
 twitter_username: givethio
 github_username: giveth
