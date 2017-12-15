@@ -1,0 +1,120 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+* {
+  max-width: 100%;
+}
+
+@mixin boxShadow($colour, $length){
+  $value: ();
+  @for $i from 1 through $length{
+    $px: $i + px;
+    $shadow: $px $px $colour;
+    $value: append($value, $shadow, comma)
+
+  }
+  text-shadow: $value;
+}
+
+#join {
+  padding-top: 15vh;
+}
+
+body{
+  background-color: #2C1A54;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff255;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  text-align: left;
+  @include boxShadow(#1fefff, 1000);
+
+  @media (max-width: 650px) {
+    font-size: 3rem;
+  }
+}
+
+h2:nth-child(2){
+  color: white;
+  @include boxShadow(#44d4bf, 1000);
+}
+
+h2:last-child{
+  color: white;
+  @include boxShadow(#fdb1b9, 1000)
+}
+
+p {
+  padding: 1rem;
+  color: white;
+}
+
+.btn-warning {
+  text-align: center;
+  background-color: #fff255;
+  border-color:  #fff255;
+}
+
+.join.column {
+  padding-top: 10vh;
+}
+
+/* Section */
+.section {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+/* Column */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0 !important; }
+
+/* Row */
+.row:before,
+.row:after { content:""; display:table; }
+.row:after { clear:both;}
+.row { zoom:1; /* For IE 6/7 */ }
+
+/* Grid */
+.grid_1_of_2{ width: 49.2% }
+.grid_2_of_2{ width: 100% }
+
+/* Full Width below 768 pixels */
+@media only screen and (max-width: 768px) {
+  .col {  margin: 1% 0 1% 0%; }
+  [class*='grid_'] { width: 100%; }
+}
+
+.color-black {
+  color: black;
+}
+
+.color-green {
+  color: #44d4bf;
+}
+
+.color-red {
+  color: #fdb1b9;
+}
+
+.color-yellow {
+  color: #fff255;
+}
+
+#footer {
+  background-color: #2C1A54;
+}
