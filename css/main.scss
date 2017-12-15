@@ -6,6 +6,7 @@
 #header {
   .navbar {
     background-color: rgba(44, 13, 84, 0.7) !important;
+    max-width: 100%;
   }
 
   .btn-secondary {
@@ -163,6 +164,8 @@ body {
 }
 
 #footer {
+  background-color: black;
+
   padding-top: 4rem;
   padding-bottom: 2rem;
   text-align: center;
