@@ -35,6 +35,14 @@
   font-size: 18px;
 }
 
+a {
+  color: #44d4bf;
+}
+
+a:hover {
+  color: #44d4bf;
+}
+
 h1, h2, h3, h4, h5, h6, .logo-font {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -453,6 +461,12 @@ body {
     text-align: center;
     background-color: #fff255;
     border-color:  #fff255;
+}
+
+.btn-info {
+    text-align: center;
+    background-color: #777777;
+    border-color:  #777777;
 }
 
 .widelarge {
