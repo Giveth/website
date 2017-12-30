@@ -8,6 +8,16 @@
   <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  <!-- Apple touch icons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" />
 
   <!-- Quicksand and Exo via Google Fonts API -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
@@ -16,6 +26,14 @@
   <script src="https://use.typekit.net/vcr4muq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   -->
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title" content="{{ page.og_title }}" />
+  <meta property="og:description" content="{{ page.og_description }}" />
+  <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
+  <meta property="og:type"  content="{{ page.og_type }}" />
+  <meta property="og:locale"  content="en_US" />
 
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
