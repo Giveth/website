@@ -157,12 +157,6 @@ body {
   }
 }
 
-#donations {
-  li {
-    list-style: none;
-    padding-bottom: 0.5rem;
-  }
-}
 
 #developers-corner {
   overflow: hidden;
@@ -928,6 +922,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
 .skip-link:focus {
   top: 80px;
 }
+
+// This creates a visible red line around all elements - great helper code for visual debugging
 
 /*
 * {
