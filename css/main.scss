@@ -157,12 +157,6 @@ body {
   }
 }
 
-#donations {
-  li {
-    list-style: none;
-    padding-bottom: 0.5rem;
-  }
-}
 
 #developers-corner {
   overflow: hidden;
@@ -188,6 +182,10 @@ body {
   .fa {
     font-size: 2rem;
     color: white;
+  }
+
+  a {
+      color: #472F6D;
   }
 
   li {
@@ -913,6 +911,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   word-wrap: break-word;
 }
 
+// Accessibility section
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #BF1722;
+  color: white;
+  padding: 8px;
+  z-index:100;
+}
+
+.skip-link:focus {
+  top: 80px;
+}
+
+// This creates a visible red line around all elements - great helper code for visual debugging
 
 /*
 * {

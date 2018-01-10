@@ -1,5 +1,5 @@
 ---
-layout: minisite
+layout: donations
 title: Donate to Giveth
 
 og_title: Donate to Giveth's development
@@ -23,39 +23,179 @@ The way I do it:
 
 2 - Link to original image with attribute target="blank", full example:
  		<a href="https://flic.kr/p/Rd94j6" target="blank"><img src="images/pic01.jpg" alt="Bridges not Walls" title= "Bridges Not Walls/Credit: Colin Hattersley/Flickr/CC BY-SA 2.0"/></a>
+
+SECTIONS:
+    #donations
+    #benefits
+    #intructions
+    #faq
+
 -->
 
-<main class="container-fluid">
+<main class="container-fluid background-white-transparent">
 
-  <section id="donations" class="container-fluid padding-top padding-bottom justify-content-center background-white-transparent">
-    <div class="padding-top flex-column d-flex justify-content-center">
-        <h2 class="padding-top">Donations</h2>
-        <div class="text-block align-self-center padding-top">
-          <p>
-          <strong>The easiest way to donate is via MyEtherWallet:</strong>
-          </p>
-          <a class="btn btn-warning widelarge" href="https://www.myetherwallet.com/?to=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&gaslimit=23000#send-transaction">Donate to Giveth</a>
-          <hr class="padding-top"/>
-          <p>
-          Giveth's <strong>ETH</strong> Donation Address: 'revolution.eth' which resolves to: <span class="word-wrap">0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc</span>
-          </p>
-          <p>
-          Giveth's <strong>BTC</strong> Donation Address: <span class="word-wrap">3Q3eCqvwk2JPocfMBfC6oS5iA9S9wDXgYA</span>
-          </p>
-          <strong  class="padding-top padding-bottom">Easy button for altcoin contributions:</strong>
-          <br><br>
-          <script>function shapeshift_click(a,e){e.preventDefault();var link=a.href;window.open(link,'1418115287605','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;}</script> <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&amp;output=ETH"><img src="https://shapeshift.io/images/shifty/large_light_ss.png" class="ss-button"></a>
-          <hr class="padding-top"/>
-          <h3>What happens with my donation?</h3>
-          <p>
-            Giveth is a Decentralized Altruistic Community. We use our donations to reward the community members that are building the Future of Giving. If you feel generous enough to donate, big or small, please contact @griffgreen on <a href="http://riot.giveth.io">Riot</a> (@griff on <a href="http://slack.giveth.io">Slack</a>) or donate directly to the Ethereum address 'revolution.eth' which resolves to: <span class="word-wrap">0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc</span>
-          </p>
-          <h3 class="padding-top">You get a Giveth Governance Token for your Donation!</h3>
-          <p>
-            We accept ETH, BTC and Ethereum based tokens directly, but if you donate ETH from MEW, Metamask, Mist or Parity you'll receive Giveth Governance Tokens (GGT) in return! GGT will become part of our decentralized governance system - ask us on <a href="http://riot.giveth.io">Riot</a> about this.
-          </p>
+  <section id="donation-hero">
+    <div class="flex-row justify-content-center">
+      <div class="flex-column justify-content-center color-white">
+        <h1 class="display-3">Help us Build the Future of Giving</h1>
+        <div class="flex-column d-flex justify-content-center">
+          <a class="btn btn-secondary color-purple" href="https://www.myetherwallet.com/?to=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&gaslimit=23000#send-transaction">Donate <i class="fab fa-ethereum"></i> directly
+          <br>
+          via MyEtherWallet</a>
         </div>
+
+      </div>
+
     </div>
+
   </section>
+
+  <section id="donations" class="background-white">
+    <ul class="flex-row d-flex features flex-wrap">
+      <li id="team" class="text-block">
+        <h3>Who are we?</h3>
+        <p>
+          We are the Community building the Giveth Donation Application, <a href="https://giveth.io">the platform</a>. Our system will make it possible for nonprofits and individuals to unite and make the world a better place, by enabling full transparency and accountability towards Givers.
+        </p>
+        <p>
+          We are the primordial Decentralized Altruistic Community (DAC), we are the Giveth Unicorns, the first users of our own platform and as every DAC, we need Givers to support us. You could be this Giver.
+        </p>
+        <h3>Why donate to Giveth?</h3>
+        <p>
+          As opposed to traditional charity, with Giveth every donation and pledge is transparent, so you always know <strong>exactly</strong> where your donation went and get a good sense of the impact it made in direct communication with your beneficiary.
+        </p>
+      </li>
+      <li id="benefits" class="text-block">
+        <h3>Benefits</h3>
+          <div class="flex-column">
+            <div class="flex-row d-flex">
+              <i class="fab fa-pied-piper fa-fw"></i>
+              <p>
+                You automatically become a part of the Giveth DAC, you are a <strong>Unicorn</strong> now!
+              </p>
+            </div>
+            <div class="flex-row d-flex">
+              <i class="fab fa-ethereum fa-fw"></i>
+              <p>
+                You are entitled to <strong>Giveth Tokens</strong> (see <a href="#faq">FAQ</a>)
+              </p>
+            </div>
+            <div class="flex-row d-flex">
+              <i class="far fa-comments fa-fw"></i>
+              <p>
+                You get added to our dedicated <strong>Givers channel</strong> on <a href="../join/">Riot and Slack</a>
+              </p>
+            </div>
+            <div class="flex-row d-flex">
+              <i class="fas fa-bolt fa-fw"></i>
+              <p>
+                You are <span>in control</span> - decide to give to our DAC or directly to a specific Campaign or Milestone<sup><a href="#footnotes">1</a></sup>
+              </p>
+            </div>
+            <div class="flex-row d-flex">
+              <i class="fas fa-eye fa-fw"></i>
+              <p>
+                You get a fully transparent insight in our organization, finances and can hold us <strong>accountable</strong> for decisions<sup><a href="#footnotes">2</a></sup>
+              </p>
+            </div>
+          </div>
+      </li>
+      <li id="instructions">
+        <div class="flex-column justify-content-center card-green">
+          <h3 class="color-white">How can you donate?</h3>
+          <ol>
+            <li>1. Donate <i class="fab fa-ethereum"></i> directly via MyEtherWallet
+              <br><br>
+              <div class="flex-column d-flex justify-content-center">
+                <a class="btn btn-secondary" href="https://www.myetherwallet.com/?to=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&gaslimit=23000#send-transaction">Donate</a>
+              </div>
+            </li>
+            <li>2. Send ETH or any ERC20 token via your wallet to our
+              <br>
+              ETH Donation Address 'revolution.eth', which resolves to
+              <div class="word-wrap">0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc</div></li>
+            <li>3. Send BTC to our BTC Donation Address<sup><a href="#footnotes">3</a></sup>
+              <div class="word-wrap">3Q3eCqvwk2JPocfMBfC6oS5iA9S9wDXgYA
+            </li>
+            <li>4. Send virtually any altcoin to us via Shapeshift<sup><a href="#footnotes">3</a></sup>
+              <div class="flex-column d-flex justify-content-center padding-top">
+                  <script>function shapeshift_click(a,e){e.preventDefault();var link=a.href;window.open(link,'1418115287605','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;}</script> <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&amp;output=ETH"><img src="https://shapeshift.io/images/shifty/xs_light_ss.png" class="ss-button"></a>
+              </div>
+            </li>
+          </ol>
+        </div
+      </li>
+    </ul>
+  <div  id="footnotes" class="flex-row community-row">
+    <h3 class="padding-top padding-bottom ">If you have donated, do contact @griffgreen or @krrisis in Slack or Riot so we can thank you personally!</h3>
+    <hr
+    <p>
+      <em><sup>1</sup> This is possible as soon we open up our DApp to the wider audience. In the meantime you can simply tell us and we will make it so!</em>
+    </p>
+    <p>
+      <em><sup>2</sup> The Giveth DAC gathers during a weekly ‘Governance Meeting.’ This meeting is <a href="https://www.youtube.com/channel/UCdqmP4axeI1hNmX20aZsOwg">streamed on youtube</a> and Givers are <a href="https://teamup.com/event/show/id/mChRGUFNcvNXyBPCVeDA3fuN8QQGjb">very welcome to attend</a> and provide feedback. We promise you full transparency and as long as funds are not locked in a specific Campaign you can revoke your donation.</em>
+    </p>
+    <p>
+      <em><sup>3</sup> We accept ETH, BTC and any Ethereum based tokens directly, but if you donate ETH from MEW, Metamask, Mist or Parity you'll receive Giveth Governance Tokens (GGT) in return! GGT will become part of our decentralized governance system - ask us on Slack or Riot if you have any doubts.</em>
+    </p>
+  </div>
+  </section>
+
+
+  <section id="faq" class="background-white padding-top padding-bottom community-row">
+    <h3>Frequently Asked Questions</h3>
+    <ul class="flex-row d-flex features">
+      <li>
+        <h5>Is Giveth recognized as an official charity? </h5>
+        <p>
+          Giveth is a
+          <a href="https://medium.com/giveth/giveth-introduces-decentralized-altruistic-communities-dacs-d1155a79bdc4">
+            Decentralized Altruistic Community</a>
+          and is not a registered as a charitable entity, we are however registered on the blockchain ;-) We are a community-led project and will not derive any direct profit from the platform. We strive to
+          <a href="https://wiki.giveth.io/dac/about/">model the DAC concept </a>
+          as one of the first not-for-profit blockchain based entities. We guarantee all funds will get recycled back into the Community that is ensuring the Giveth Platform gets adopted widely.
+        </p>
+      </li>
+      <li>
+        <h5>What is the roadmap for the Giveth Platform? </h5>
+        <p>
+          The roadmap for the Giveth DApp can be found <a href="https://wiki.giveth.io/documentation/product-roadmap/">here</a>.
+          <br>
+          As a Giver you can also ask us for an exclusive tour of the DApp in which The Giveth DAC, Campaigns plus Milestones are visible. These are updated continuously.
+        </p>
+      </li>
+      <li>
+        <h5>I still need more detail on how Giveth works, where can I find this? </h5>
+        <p>
+          You can read a <a href="https://medium.com/giveth/what-is-the-future-of-giving-d50446b0a0e4">general overview</a> of how the Donation Application works or read more about it in our <a href="https://wiki.giveth.io/documentation/product-definition/">product definition</a>. If you want to discover our other activities, do browse our Wiki or reach out to us on <a href="../join">Slack or Riot!</a>
+        </p>
+      </li>
+      <li>
+        <h5>How do the Giveth Governance Tokens work and how do I get these? </h5>
+        <p>
+          We accept ETH, BTC and any Ethereum based tokens directly, but if you donate ETH from MEW, Metamask, Mist or Parity you'll receive Giveth Governance Tokens (GGT) in return!
+          <br>
+          When you donate you receive Giveth Governance Tokens, which will be in control of the platform once we are full on decentralized. Contact us on <a href="../join">Slack or Riot</a> if you have any doubts.
+        </p>
+      </li>
+      <li>
+        <h5>Where can I see in detail what you are spending donations on? </h5>
+        <p>
+          One of the core values of Giveth is transparency. We invite everyone to have a look at our <a href="https://wiki.giveth.io/dac/finances/">finances</a>.
+          <br>
+          As a Giver you can also ask us for an exclusive tour of the DApp in which The Giveth DAC, Campaigns plus Milestones ànd the funds linked to these are visible onto a very granular level. In the near future access to the DApp will be opened up to the wider public.
+
+        </p>
+      </li>
+      <li>
+        <h5>I like your project but right now I have no funds to donate, how else can I contribute? </h5>
+        <p>
+          We are a very inclusive Community and would love your help, in any way possible, <a href="../join">just join and come talk to us!</a> We even have a special channel for you: #contributors.
+          <br>Oh, and one more thing. If you hold any cryptocurrency, you know that securing your keys is paramount. The Giveth core team uses the Ledger Nano S and by ordering yours via this <a href="https://www.ledgerwallet.com/r/d663?path=/products/ledger-nano-s">link</a> Giveth will receive a donation worth 15% of the cost. Protect yourself and support our cause!
+        </p>
+      </li>
+    </ul>
+  </section>
+
 
 </main>
