@@ -1,0 +1,139 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #5CA43F;
+}
+
+#donation-hero {
+  height: 60vh;
+  background-image: url('https://images.unsplash.com/photo-1500320821405-8fc1732209ca?auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: none;
+
+
+
+  h1 {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .btn-secondary {
+    background-color: #472F6D;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    align-self: center;
+  }
+
+  .btn-secondary:hover, .btn-secondary.active {
+      background-color: white;
+      color: #472F6D;
+      box-shadow: none;
+  }
+
+  @media(max-width: 650px){
+    height: 100vh;
+  }
+}
+
+#donations {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    min-width: 30vw;
+  }
+
+  @media(max-width: 920px){
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+
+    li {
+      min-width: 90vw;
+    }
+  }
+}
+
+#team {
+  padding-top: 10vh;
+}
+
+#benefits {
+  padding-top: 10vh;
+  p {
+    margin-left: 1rem;
+    padding: 0.5rem;
+  }
+  li {
+    list-style: none;
+    margin-left: none;
+  }
+  .fa-fw {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+#instructions {
+  padding-top: 9vh;
+
+  a {
+    color: #fff255;
+  }
+
+  .btn-secondary {
+      color: #472F6D;
+  }
+  .btn-secondary:hover, .btn-secondary.active {
+      background-color: #fff255;
+      color: #472F6D;
+      box-shadow: none;
+  }
+
+  @media(max-width: 920px){
+
+    li  {
+      min-width: 80vw;
+    }
+  }
+}
+
+.card-green {
+  color: black;
+  border-radius: 1rem;
+  background-color: #5CA43F;
+  padding: 1vh;
+}
+
+.word-wrap {
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: #fff255;
+
+  @media(max-width: 650px){
+    text-overflow: ellipsis;
+    max-width: 80vw;
+  }
+}
+
+#faq {
+   padding-top: 10vh;
+}
