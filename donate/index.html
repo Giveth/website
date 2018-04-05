@@ -38,12 +38,13 @@ SECTIONS:
     <div class="flex-row justify-content-center">
       <div class="flex-column justify-content-center color-white">
         <h1 class="display-3">Help us Build the Future of Giving</h1>
+        
         <div class="flex-column d-flex justify-content-center">
           <a class="btn btn-secondary color-purple" href="https://www.mycrypto.com/?to=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&gaslimit=23000#send-transaction">Donate <i class="fab fa-ethereum"></i> directly
           <br>
           via MyCrypto</a>
         </div>
-
+    
       </div>
 
     </div>
@@ -51,7 +52,7 @@ SECTIONS:
   </section>
 
   <section id="donations" class="background-white">
-    <ul class="flex-row d-flex features flex-wrap">
+    <ul class="flex-row d-flex features flex-wrap justify-content-around">
       <li id="team" class="text-block">
         <h3>Who are we?</h3>
         <p>
@@ -100,47 +101,54 @@ SECTIONS:
             </div>
           </div>
       </li>
-      <li id="instructions">
-        <div class="flex-column justify-content-center card-green">
-          <h3 class="color-white">How can you donate?</h3>
+      <li id="etherglade">
+          <div id="etherglade_container"></div>
+      </li>
+    </ul>
+  <div class="row d-flex">
+      <section class="flex-column d-flex m-auto justify-content-center card-green alternatives-style">
+          <h3 class="color-white">Other ways to donate</h3>
           <ol>
             <li>1. Donate <i class="fab fa-ethereum"></i> directly via MyCrypto
               <br><br>
               <div class="flex-column d-flex justify-content-center">
-                <a class="btn btn-secondary" href="https://www.mycrypto.com/?to=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&gaslimit=23000#send-transaction">Donate</a>
+                <a class="btn btn-secondary m-auto" href="https://www.mycrypto.com/?to=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&gaslimit=23000#send-transaction">Donate</a>
               </div>
             </li>
+            <hr>
             <li>2. Send ETH or any ERC20 token via your wallet to our
               <br>
               ETH Donation Address 'revolution.eth', which resolves to
               <div class="word-wrap">0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc</div></li>
+            <hr>
             <li>3. Send BTC to our BTC Donation Address<sup><a href="#footnotes">1</a></sup>
               <div class="word-wrap">3Q3eCqvwk2JPocfMBfC6oS5iA9S9wDXgYA
             </li>
+            <hr>
             <li>4. Send virtually any altcoin to us via Shapeshift<sup><a href="#footnotes">1</a></sup>
               <div class="flex-column d-flex justify-content-center padding-top">
                   <script>function shapeshift_click(a,e){e.preventDefault();var link=a.href;window.open(link,'1418115287605','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;}</script> <a onclick="shapeshift_click(this, event);" href="https://shapeshift.io/shifty.html?destination=0x5ADF43DD006c6C36506e2b2DFA352E60002d22Dc&amp;output=ETH"><img src="https://shapeshift.io/images/shifty/xs_light_ss.png" class="ss-button"></a>
               </div>
             </li>
           </ol>
-        </div
-      </li>
-    </ul>
-  <div  id="footnotes" class="flex-row community-row">
-    <a href="../join"><h3 class="padding-top padding-bottom ">If you have donated, please let us know so we can thank you personally!</h3></a>
-  <hr>
-    <p>
-      <em><sup>1</sup> We accept ETH, BTC and any Ethereum based tokens directly, but if you donate ETH from MEW, Metamask, Mist or Parity you'll receive Giveth Governance Tokens (GGT) in return! GGT will become part of our decentralized governance system - ask us on Slack or Riot if you have any doubts.</em>
-    </p>
-    <p>
-      <em><sup>2</sup> This is possible as soon we open up our DApp to the wider audience. In the meantime you can simply tell us and we will make it so!</em>
-    </p>
-    <p>
-      <em><sup>3</sup> The Giveth DAC gathers during a weekly ‘Governance Meeting.’ This meeting is <a href="https://www.youtube.com/channel/UCdqmP4axeI1hNmX20aZsOwg">streamed on youtube</a> and Givers are <a href="http://join.giveth.io">very welcome to attend</a> and provide feedback. We promise you full transparency and as long as funds are not locked in a specific Campaign you can revoke your donation.</em>
-    </p>
-    <p>
+      </section>
+  
+    <div  id="footnotes" class="col-md-6 m-auto">
+        <a href="../join"><h3 class="padding-top padding-bottom ">If you have donated, please let us know so we can thank you personally!</h3></a>
+      <hr>
+        <p>
+          <em><sup>1</sup> We accept ETH, BTC and any Ethereum based tokens directly, but if you donate ETH from MEW, Metamask, Mist or Parity you'll receive Giveth Governance Tokens (GGT) in return! GGT will become part of our decentralized governance system - ask us on Slack or Riot if you have any doubts.</em>
+        </p>
+        <p>
+          <em><sup>2</sup> This is possible as soon we open up our DApp to the wider audience. In the meantime you can simply tell us and we will make it so!</em>
+        </p>
+        <p>
+          <em><sup>3</sup> The Giveth DAC gathers during a weekly ‘Governance Meeting.’ This meeting is <a href="https://www.youtube.com/channel/UCdqmP4axeI1hNmX20aZsOwg">streamed on youtube</a> and Givers are <a href="http://join.giveth.io">very welcome to attend</a> and provide feedback. We promise you full transparency and as long as funds are not locked in a specific Campaign you can revoke your donation.</em>
+        </p>
+        <p>
 
-    </p>
+        </p>
+    </div>
   </div>
   </section>
 
@@ -202,3 +210,13 @@ SECTIONS:
 
 
 </main>
+
+<script src="https://cdn.jsdelivr.net/gh/etherglade/ethergladejs/etherglade-landing.js">
+</script>
+<script>
+  var example_instance = new etherglade("39F7DDDD", "main_9460122373464f61e289bbcd81dd8f1e2");
+  example_instance.initiateComponent('#etherglade_container', {
+      value: 100000000000000000,
+      changeableValue: true,
+  });
+</script>

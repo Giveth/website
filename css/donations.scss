@@ -57,21 +57,27 @@ a {
   li {
     list-style: none;
     padding-bottom: 0.5rem;
-    min-width: 30vw;
   }
 
-  @media(max-width: 920px){
+  @media(max-width: 1200px){
     padding-left: 0.2rem;
     padding-right: 0.2rem;
 
     li {
-      min-width: 90vw;
+      min-width: 380px;
     }
   }
 }
 
 #team {
   padding-top: 10vh;
+
+  @media(max-width: 1200px){
+
+    li {
+      min-width: 90vw;
+    }
+  }
 }
 
 #benefits {
@@ -88,10 +94,32 @@ a {
     margin-top: 0.5rem;
     font-size: 2.5rem;
   }
+
+  @media(max-width: 1200px){
+    li {
+      min-width: 90vw;
+    }
+  }
 }
 
-#instructions {
-  padding-top: 9vh;
+#etherglade {
+  padding-top: 10vh;
+  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 380px;
+  
+  @media (max-width: 1200px) {
+    padding-bottom: 2rem;
+    li {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.alternatives-style {
+  text-align: center;
 
   a {
     color: #fff255;
@@ -99,6 +127,7 @@ a {
 
   .btn-secondary {
       color: #472F6D;
+      width: 100px;
   }
   .btn-secondary:hover, .btn-secondary.active {
       background-color: #fff255;
@@ -118,7 +147,8 @@ a {
   color: black;
   border-radius: 1rem;
   background-color: #5CA43F;
-  padding: 1vh;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .word-wrap {
