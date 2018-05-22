@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (8.4.1)
+    autoprefixer-rails (8.5.0)
       execjs
     bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
@@ -60,7 +60,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2018.4)
+    tzinfo-data (1.2018.5)
       tzinfo (>= 1.0.0)
 
 PLATFORMS
@@ -68,7 +68,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0.beta3)
+  bootstrap (~> 4.0.0)
   jekyll (= 3.6.2)
   jekyll-feed (~> 0.9.2)
   jekyll-sitemap
@@ -76,4 +76,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.1
+   1.16.2

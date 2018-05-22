@@ -20,7 +20,7 @@ gem "minima", "~> 2.1.1"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.9.2"
-   gem 'bootstrap', '~> 4.0.0.beta3'
+   gem 'bootstrap', '~> 4.0.0'
    gem 'jekyll-sitemap'
 end
 

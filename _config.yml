@@ -35,3 +35,4 @@ collections:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
